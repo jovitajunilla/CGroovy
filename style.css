@@ -1,0 +1,154 @@
+@font-face {
+    font-family: 'Nexa Regular';
+    src: url(font/Nexa\ Regular.otf);
+}
+@font-face {
+    font-family: 'Nexa Thin';
+    src: url(font/Nexa\ Thin.otf);
+}
+@font-face {
+    font-family: 'Nexa Bold';
+    src: url(font/Nexa\ Bold.otf);
+}
+@font-face {
+    font-family: 'Nexa Heavy';
+    src: url(font/Nexa\ Heavy.otf);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Nexa Regular';
+}
+
+body{
+    background-color: #1F1F1F;
+}
+
+.navbar{
+    padding: 0 40px;
+    display: flex;
+    align-items: center;
+    -webkit-text-fill-color: white;
+    font-family: 'Nexa Heavy';
+    height: 90px;
+    background: linear-gradient(to right, #9D3FB9, #9A4977);
+
+    h2{
+        font-size: 30px;
+    }
+
+}
+
+.right-menu{
+    display: flex;
+    gap: 25px;
+    margin-left: auto;
+    align-items: center; 
+    
+    h2{
+        font-size: 20px;
+    }
+
+    button{
+        font-family: 'Nexa Heavy';
+        font-size: 20px;
+        height: 40px;
+        width: 150px;
+        border: none;
+        border-radius: 20px;
+        -webkit-text-fill-color: #D0537A;
+        background-color: white;
+    }
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding: 40px;
+}
+
+.content h1, h2, h3, h4, h5{
+    -webkit-text-fill-color: white  ;
+}
+
+.top-content{
+    display: flex;
+    gap: 50px;
+}
+
+.unique-value-point {
+    padding: 30px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+
+    font-size: 15px;
+    background-color: #191919;
+    height: 50vh;
+    width: 45vh;
+
+    box-sizing: border-box;
+
+    h4{
+        text-align: center;
+        font-family: 'Nexa Thin';
+        -webkit-text-fill-color: white;
+    }
+
+    img{
+        margin-left: 20px;
+    }
+
+    button{
+        font-family: 'Nexa Heavy';
+        font-size: 20px;
+        height: 40px;
+        width: 170px;
+        border: none;
+        border-radius: 5px;
+        -webkit-text-fill-color: #ffffff;
+        background-color: #B838A7;
+    }
+}
+
+.best-seller{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+
+}
+
+.best-seller-group-content{
+    display: flex;
+    gap: 40px;
+}
+
+.best-seller-content{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    h5{
+        font-family: 'Nexa Thin';
+        -webkit-text-fill-color: #C4C4C4;
+    }
+}
+
+.bottom-content{
+    padding: 40px 40px;
+    background-color: #191919;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    box-sizing: border-box;
+}
+
+.content-group{
+    display: flex;
+    gap: 40px;
+}
