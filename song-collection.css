@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Nexa Thin";
+}
+
+body{
+    background-color: #1F1F1F;
+    margin: 2rem;
+}
+
+@font-face {
+    font-family: "Nexa Heavy";
+    src: url("font/Nexa\ Heavy.otf");
+}
+
+@font-face {
+    font-family: "Nexa Regular";
+    src: url("font/Nexa\ Regular.otf");
+}
+
+@font-face {
+    font-family: "Nexa Thin";
+    src: url("font/Nexa\ Thin.otf");
+}
+
+.white{
+    color: white;
+} 
+
+#songCollectionTitle{
+    font-family: "Nexa Heavy";
+}
+
+#buttonPlay{
+    display: flex;
+    flex-direction: row;
+    font-size: 20px;
+    background-color: #2B2B2B;
+    border-radius: 6px;
+    padding: 0.5rem 1rem;
+    width: fit-content;
+    gap: 0.5rem;
+    p{
+        font-family: "Nexa Regular";
+        align-self: center;
+    }
+}
+
+#image-play{
+    width: 30px;
+}
+
+.songCollection{
+    display: flex;
+    flex-direction: column;
+    margin: 4rem 0;
+    gap: 1rem;
+}
+
+.buttonWhite{
+    padding: 0.2rem 1rem;
+    background-color: white;
+    width: fit-content;
+    font-size: 14px;
+    border-radius: 5px;
+}
+
+.heavy{
+    font-family: "Nexa Heavy";
+}
+
+.black-container{
+    display: flex;
+    flex-direction: column;
+    background-color: #161616;
+    padding: 2rem;
+    border-radius: 6px;
+}
+
+.song-list{
+    display: flex;
+    flex-direction: row;
+    gap: 4rem;
+}
+
+.song{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 20%;
+}
+
+.song-title{
+    font-family: "Nexa Heavy";
+    color: white;
+    font-size:18px;
+}
+
+.song-desc{
+    color: white;
+    font-size: 15px;
+}
+
+.img-song-list{
+    border-radius: 10px;
+}
+
+.white-bold{
+    color: white;
+    font-family: "Nexa Regular";
+    font-size: 28px;
+}

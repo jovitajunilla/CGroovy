@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Nexa Regular";
+  color: white;
+}
+
+@font-face {
+  font-family: "Nexa Regular";
+  src: url("font/Nexa\ Regular.otf");
+}
+
+@font-face {
+  font-family: "Nexa Thin";
+  src: url("font/Nexa\ Thin.otf");
+}
+
+@font-face {
+  font-family: "Nexa Heavy";
+  src: url("font/Nexa\ Heavy.otf");
+}
+
+#background-blur {
+  position: absolute;
+  background-image: url(image-songdetail/song-list1.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  filter: blur(6px);
+  z-index: -2;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+#background-dark {
+  position: absolute;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+#content {
+  z-index: 1;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  gap: 5rem;
+  margin: 7rem;
+  width: 100%;
+}
+
+#box-container {
+  display: flex;
+}
+
+.song-title-detail {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 100%;
+}
+
+.song-title {
+  font-size: 65px;
+}
+
+.song-singer {
+  font-family: "Nexa Thin";
+  color: #c4c4c4;
+  font-size: 30px;
+}
+
+.song-desc {
+  font-size: 18px;
+  color: #c4c4c4;
+}
+
+.img-song {
+  object-fit: cover;
+  border-radius: 10px;
+  height: 100%;
+}
+
+#buttonPlay {
+  display: flex;
+  flex-direction: row;
+  font-size: 20px;
+  background-color: #2b2b2b;
+  border-radius: 6px;
+  padding: 0.5rem 1rem;
+  width: fit-content;
+  gap: 0.5rem;
+  p {
+    font-family: "Nexa Regular";
+    align-self: center;
+  }
+}
+
+#time {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+#play-timer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.lyrics {
+  white-space: pre-line;
+}
+
+#lyrics-container {
+  
+}
+
+#layer-blur {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  filter: blur(8px);
+  background-color: #2B2B2B;
+  background-clip: padding-box;
+  z-index: -2;
+}
