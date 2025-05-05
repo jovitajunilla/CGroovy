@@ -18,11 +18,16 @@ body{
   src: url("font/Nexa\ Regular.otf");
 }
 
+@font-face {
+  font-family: "Nexa Thin";
+  src: url("font/Nexa\ Thin.otf");
+}
+
 .navbar{
   padding: 0 40px;
   display: flex;
   align-items: center;
-  -webkit-text-fill-color: white;
+  color: white;
   font-family: 'Nexa Heavy';
   height: 90px;
   background: linear-gradient(to right, #9D3FB9, #9A4977);
@@ -33,8 +38,13 @@ body{
 
 }
 
-#menu:hover{
-  color: gray;
+.menu{
+  text-align: right;
+  background-color: #ae1616db;
+}
+
+.menu:hover{
+  color: rgb(201, 201, 201);
 }
 
 .right-menu{
@@ -46,18 +56,47 @@ body{
   h2{
       font-size: 20px;
   }
-
-  button{
-      font-family: 'Nexa Heavy';
-      font-size: 20px;
-      height: 40px;
-      width: 150px;
-      border: none;
-      border-radius: 20px;
-      -webkit-text-fill-color: #D0537A;
-      background-color: white;
-  }
 }
+
+#register-button{
+  font-family: 'Nexa Heavy';
+  font-size: 20px;
+  height: 40px;
+  width: 150px;
+  border: none;
+  border-radius: 20px;
+  -webkit-text-fill-color: #D0537A;
+  background-color: white;
+}
+
+#register-button:hover{
+  background-color: rgb(201, 201, 201);
+  transform: scale(1.01);
+
+}
+
+.dropdown-menu-list{
+  display: flex;
+  flex-direction: column;
+  font-family: "Nexa Thin";
+}
+
+.dropdown-menu{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  text-align: right;
+  padding: 1rem;
+  background-color: #2D2D2D;
+  gap: 0.5rem;
+  border-radius: 6px;
+  
+}
+
+.menu-and-dropdown{
+  gap: 2rem
+}
+/* --------------------------------------------------- */
 
 .black {
   color: black;
