@@ -108,7 +108,7 @@ body{
   #bold-list{
     font-family: "Nexa Heavy";
   }
-  
+
   .dropdown-menu{
    display: none;
     position: absolute;
@@ -219,3 +219,36 @@ body{
     font-family: "Nexa Regular";
     font-size: 28px;
 }
+
+/* --END CONTENT------------------------------------------- */
+
+/* FOOTER -------------------------------------------------- */
+
+footer{
+    background-color: #191919;
+    color: white;
+    font-family: 'Nexa Thin';
+    h1{
+      font-size: 30px;
+    }
+  }
+  
+  #footer-all{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+  }
+  
+  #right-footer{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+  }
+  
+  .right-list{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }

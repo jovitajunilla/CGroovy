@@ -1,11 +1,11 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: "Nexa Heavy";
 }
 
 body{
     background-color: #1f1f1f;
+    font-family: "Nexa Heavy";
 }
 
 @font-face {
@@ -226,3 +226,35 @@ a{
     margin: 5rem 0;
 }
 
+/* --END CONTENT------------------------------------------- */
+
+/* FOOTER -------------------------------------------------- */
+
+footer{
+  background-color: #191919;
+  color: white;
+  font-family: 'Nexa Thin';
+  h1{
+    font-size: 30px;
+  }
+}
+
+#footer-all{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+}
+
+#right-footer{
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+
+.right-list{
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
