@@ -31,6 +31,15 @@ body{
     flex-direction: column;
     gap: 50px;
     padding: 40px;
+
+    h1{
+      font-size: 28px;
+    }
+
+    img{
+      width:25vh;
+    }
+
 }
 
 .content h1, h2, h3, h4, h5{
@@ -39,6 +48,7 @@ body{
 
 .top-content{
     display: flex;
+    flex-wrap: wrap;
     gap: 50px;
 }
 
@@ -49,57 +59,82 @@ body{
     align-items: center;
     justify-content: center;
     gap: 30px;
-
+    
     font-size: 15px;
     background-color: #191919;
     height: 50vh;
     width: 45vh;
-
+    
     box-sizing: border-box;
-
+    
     h4{
-        text-align: center;
-        font-family: 'Nexa Thin';
-        -webkit-text-fill-color: white;
+      font-size: 15px;
+      text-align: center;
+      font-family: 'Nexa Thin';
+      -webkit-text-fill-color: white;
+      white-space: nowrap;         /* Mencegah teks pindah baris */
     }
-
+    
     img{
-        margin-left: 20px;
+      margin-left: 20px;
     }
-
+    
     button{
-        font-family: 'Nexa Heavy';
-        font-size: 20px;
-        height: 40px;
-        width: 170px;
-        border: none;
-        border-radius: 5px;
-        -webkit-text-fill-color: #ffffff;
-        background-color: #B838A7;
+      font-family: 'Nexa Heavy';
+      font-size: 20px;
+      height: 40px;
+      width: 170px;
+      border: none;
+      border-radius: 5px;
+      -webkit-text-fill-color: #ffffff;
+      background-color: #B838A7;
     }
-}
-
-.best-seller{
+  }
+  
+  /* BEST SELLER */
+  
+  .best-seller{
     display: flex;
     flex-direction: column;
     gap: 20px;
-
-
-}
-
-.best-seller-group-content{
+  }
+  
+  .content-group{
     display: flex;
+    flex-wrap: wrap;
     gap: 40px;
-}
-
-.best-seller-content{
+  }
+  
+  .each-content{
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    h5{
-        font-family: 'Nexa Thin';
-        -webkit-text-fill-color: #C4C4C4;
+    gap: 7px;
+    
+    h4{
+      font-family: 'Nexa Regular';
     }
+
+    h5{
+      font-family: 'Nexa Thin';
+      -webkit-text-fill-color: #C4C4C4;
+    }
+
+}
+
+/* RECOMMENDATION */
+
+.recommendation{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  
+  background-color: #191919;
+  height: auto;
+  padding: 50px 80px;
+
+  h1{
+
+  }
 }
 
 .bottom-content{
