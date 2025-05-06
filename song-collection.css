@@ -184,6 +184,7 @@ body{
     background-color: #161616;
     padding: 2rem;
     border-radius: 6px;
+    gap: 0.8rem;
 }
 
 .song-list{
@@ -197,6 +198,12 @@ body{
     flex-direction: column;
     gap: 0.5rem;
     width: 20%;
+}
+
+.song:hover{
+  .img-song-list{
+    box-shadow: 0 0 10px rgb(255, 255, 255);
+  }
 }
 
 .song-title{
