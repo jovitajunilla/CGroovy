@@ -9,20 +9,23 @@ body{
 }
 
 @font-face {
-  font-family: "Nexa Heavy";
-  src: url("font/Nexa\ Heavy.otf");
+  font-family: 'Nexa Regular';
+  src: url(font/Nexa\ Regular.otf);
 }
-
 @font-face {
-  font-family: "Nexa Regular";
-  src: url("font/Nexa\ Regular.otf");
+  font-family: 'Nexa Thin';
+  src: url(font/Nexa\ Thin.otf);
 }
-
 @font-face {
-  font-family: "Nexa Thin";
-  src: url("font/Nexa\ Thin.otf");
+  font-family: 'Nexa Bold';
+  src: url(font/Nexa\ Bold.otf);
+}
+@font-face {
+  font-family: 'Nexa Heavy';
+  src: url(font/Nexa\ Heavy.otf);
 }
 
+/* HEADER ------------------------------------------------------------------- */
 .navbar{
   padding: 0 40px;
   display: flex;
@@ -40,11 +43,18 @@ body{
 
 .menu{
   text-align: right;
-  background-color: #ae1616db;
+  padding: 20px;
+  font-family: "Nexa Heavy";
 }
 
 .menu:hover{
   color: rgb(201, 201, 201);
+}
+
+
+.menu:hover+.dropdown-menu{
+    display: flex;
+    flex-direction: column;
 }
 
 .right-menu{
@@ -53,8 +63,13 @@ body{
   margin-left: auto;
   align-items: center; 
   
+  
   h2{
       font-size: 20px;
+  }
+
+  h1{
+      font-family: "Nexa Heavy";
   }
 }
 
@@ -79,24 +94,46 @@ body{
   display: flex;
   flex-direction: column;
   font-family: "Nexa Thin";
+  padding: 0.5rem 1.5rem;
+}
+
+a{
+  color: inherit;
+  text-decoration-line: none;
+}
+
+.dropdown-menu-list:hover{
+  background-color: #282828;
+
+}
+
+#bold-list{
+  font-family: "Nexa Heavy";
 }
 
 .dropdown-menu{
-  display: flex;
-  flex-direction: column;
+ display: none;
   position: absolute;
   text-align: right;
-  padding: 1rem;
   background-color: #2D2D2D;
-  gap: 0.5rem;
+  padding: 1rem 0;
   border-radius: 6px;
-  
+  right: 250px;
+  top: 70px;
+  width: 200px;
+  text-decoration: none;
+  color: white;
 }
 
-.menu-and-dropdown{
-  gap: 2rem
+.dropdown-menu:hover{
+  display: flex;
+  flex-direction: column;
 }
-/* --------------------------------------------------- */
+
+
+/* END HEADER ----------------------------------------------------------- */
+
+/* CONTENT -------------------------------------------------------------- */
 
 .black {
   color: black;
