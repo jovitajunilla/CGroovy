@@ -3,25 +3,25 @@
   padding: 0;
 }
 
-body{
-    background-color: #1f1f1f;
-    font-family: "Nexa Heavy";
+body {
+  background-color: #1f1f1f;
+  font-family: "Nexa Heavy";
 }
 
 @font-face {
-  font-family: 'Nexa Regular';
+  font-family: "Nexa Regular";
   src: url(font/Nexa\ Regular.otf);
 }
 @font-face {
-  font-family: 'Nexa Thin';
+  font-family: "Nexa Thin";
   src: url(font/Nexa\ Thin.otf);
 }
 @font-face {
-  font-family: 'Nexa Bold';
+  font-family: "Nexa Bold";
   src: url(font/Nexa\ Bold.otf);
 }
 @font-face {
-  font-family: 'Nexa Heavy';
+  font-family: "Nexa Heavy";
   src: url(font/Nexa\ Heavy.otf);
 }
 
@@ -52,70 +52,69 @@ body{
 #aboutUsContent {
   display: flex;
   margin: 5rem 2rem 2rem 2rem;
+  padding-bottom: 2rem;
   background-color: #191919;
   border-radius: 10px;
 }
 
-#img-cassete{
-    position: absolute;
-    margin: -2rem 0 0 2rem;
+#img-cassete {
+  margin: -2rem 0 2rem 2rem;
+  width: 50vw;
 }
 
 #aboutUsContent-right {
   display: flex;
   flex-direction: column;
-  justify-content: end;
-  width: 45%;
-  padding:15vh 0 15vh 50% ;
-  z-index: 1;
+  justify-content: center;
+  padding: 0 5rem;
   text-align: justify;
 }
 
-.font38{
-    font-size: 38px;
+.font38 {
+  font-size: 38px;
 }
 
-#journeyProgression{
-    display: flex;
-    flex-direction: column;
-    gap: 5rem;
-    color: white;
-    background-color: #292929;
-    padding: 8rem;
-    margin: 2rem;
-    text-align: justify;
-    border-radius: 10px;
+#journeyProgression {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  color: white;
+  background-color: #292929;
+  padding: 5vw;
+  margin: 2rem;
+  text-align: justify;
+  border-radius: 10px;
 }
 
-#journeyProgressionTitle{
-    text-align: center;
+#journeyProgressionTitle {
+  text-align: center;
 }
 
-#teamMembersTitle{
-    background-color: white;
-    padding: 15px 0 15px 40px;
-    width: 40%;
-    margin-top: 5vh;
+#teamMembersTitle {
+  background-color: white;
+  padding: 15px 0 15px 40px;
+  width: 40%;
+  margin-top: 5vh;
 }
 
-#teamMembersTitleContainer{
-    display: flex;
-    width: 100%;
-    justify-content: right;
+#teamMembersTitleContainer {
+  display: flex;
+  width: 100%;
+  justify-content: right;
 }
 
-#name{
-    font-size: 25px;
+#name {
+  font-size: 25px;
 }
 
-#pictureContainer{
-    display: flex;
-    flex-direction: row;
-    color: white;
-    gap: 8rem;
-    text-align: center;
-    justify-content: center;
-    margin: 5rem 0;
+#pictureContainer {
+  display: flex;
+  flex-wrap: wrap;
+  color: white;
+  gap: 8rem;
+  text-align: center;
+  justify-content: center;
+  margin: 5rem 0;
 }
 
 /* --END CONTENT------------------------------------------- */
