@@ -4,7 +4,7 @@ let songData = {
         image: "img/song/Backstreet Boys - I Want It That Way.jpg",
         title: "I Want It That Way",
         artist:"Backstreet Boys",
-        desc: "",
+        desc: "A catchy pop ballad about longing and unrequited love, expressing a desire to be together despite the obstacles.",
         release:"Year Date: 1999",
         mood:"Romance",
         audio:"audio/Backstreet Boys - I Want It That Way.mp3",
@@ -76,8 +76,8 @@ let songData = {
         image: "img/song/Billie Eilish - What Was I Made For.jpeg",
         title: "What Was I Made For",
         artist:"Billie Eilish",
-        desc: "",
-        release:"Year Date: ",
+        desc: "A reflective and emotional song about searching for purpose and understanding one’s identity, exploring feelings of uncertainty and longing.",
+        release:"Year Date: 2023",
         mood:"Sad",
         audio:"audio/Billie Eilish - What Was I Made For.mp3",
         lyrics:`I used to float
@@ -128,7 +128,7 @@ let songData = {
             title: "Grenade",
             artist: "Bruno Mars",
             desc: "Powerful pop song about sacrifice and heartbreak in love.",
-            release: "Year Date: ",
+            release: "Year Date: 2010",
             mood: "Heartbreak",
             audio: "audio/Bruno Mars - Grenade.mp3",
             lyrics:`Easy come, easy go, that's just how you live
@@ -197,7 +197,7 @@ let songData = {
         title: "Talking To The Moon",
         artist: "Bruno Mars",
         desc: "Melancholic ballad about longing and loneliness when separated from a loved one.",
-        release: "Year Date: ",
+        release: "Year Date: 2010",
         mood: "Romance",
         audio: "audio/Bruno Mars - Talking To The Moon.mp3",
         lyrics: `I know you're somewhere out there, somewhere far away
@@ -248,7 +248,7 @@ let songData = {
         title: "Versace on the Floor",
         artist: "Bruno Mars",
         desc: "Smooth romantic song with sensual vibes and lyrics about intimacy and love.",
-        release: "Year Date: ",
+        release: "Year Date: 2017",
         mood: "Romance",
         audio: "audio/Bruno Mars - Versace on the Floor.mp3",
         lyrics:``
@@ -258,7 +258,7 @@ let songData = {
         title: "Midnight Memories",
         artist: "One Direction",
         desc: "Energetic pop-rock track about youthful freedom and unforgettable nights.",
-        release: "Year Date: ",
+        release: "Year Date: 2014",
         mood: "Party",
         audio: "audio/One Direction - Midnight Memories.mp3",
         lyrics: `Let's take our time tonight, girl
@@ -323,9 +323,9 @@ let songData = {
         image: "img/song/Juicy Luicy - Tanpa Tergesa.jpg",
         title: "Tanpa Tergesa",
         artist:"Juicy Luicy",
-        desc: "",
-        release:"Year Date: ",
-        mood:"",
+        desc: "A heartfelt pop song by Juicy Luicy about embracing life's moments without rushing, focusing on living in the present and cherishing love.",
+        release:"Year Date: 2018",
+        mood:"Calm",
         audio:"audio/Juicy Luicy - Tanpa Tergesa.mp3",
         lyrics:`Jaga dulu jarak kita
                 Jika tak ingin akhirnya
@@ -373,8 +373,8 @@ let songData = {
         title: "Garam & Madu (Sakit Dadaku)",
         artist: "Tenxi, Naykilla & Jemsii",
         desc: "Emotional R&B collaboration blending heartfelt vocals and soulful beats.",
-        release: "Year Date: ",
-        mood: "",
+        release: "Year Date: 2024",
+        mood: "Party",
         audio: "audio/Tenxi, Naykilla & Jemsii - Garam & Madu (Sakit Dadaku).mp3",
         lyrics:`Tanpa ku sadar, ku mulai bertanya
                 Jika terulang, akankah sama?
@@ -432,8 +432,8 @@ let songData = {
         title: "Kuingin",
         artist: "The Groove",
         desc: "Soulful R&B track with emotional depth and smooth instrumentation.",
-        release: "Year Date: ",
-        mood: "",
+        release: "Year Date: 1999",
+        mood: "Energetic",
         audio: "audio/The Groove - Kuingin.mp3",
         lyrics:`Kucoba sampaikan semua ini
                 Sampaikan pada dirimu
@@ -493,7 +493,7 @@ let songData = {
         title: "HYMNE BINUS UNIVERSITY",
         artist: "Various Artists",
         desc: "Inspirational anthem representing pride and spirit of Binus University.",
-        release: "Year Date: ",
+        release: "Year Date: 2018",
         mood: "Pride",
         audio: "audio/HYMNE BINUS UNIVERSITY.mp3",
         lyrics:`Perguruan tinggi Bina Nusantara
