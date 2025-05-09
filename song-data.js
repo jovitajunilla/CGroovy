@@ -1,6 +1,6 @@
-let songData = {
-    Pop:[{
+export const songData = [{
         // 1-------------------------------------------------------------
+        category: "Pop",
         image: "img/song/Backstreet Boys - I Want It That Way.jpg",
         title: "I Want It That Way",
         artist:"Backstreet Boys",
@@ -73,6 +73,7 @@ let songData = {
                 'Cause I want it that way`,
     },{
           // 2-------------------------------------------------------------
+        category: "Pop",
         image: "img/song/Billie Eilish - What Was I Made For.jpeg",
         title: "What Was I Made For",
         artist:"Billie Eilish",
@@ -124,7 +125,8 @@ let songData = {
                 Something I'm made for`
     }, {
           // 3-------------------------------------------------------------
-            image: "img/song/Bruno Mars - Grenade-Talking To TheMoon.png",
+            category: "Pop", 
+            image: "img/song/Bruno Mars - Grenade-TalkingToTheMoon.png",
             title: "Grenade",
             artist: "Bruno Mars",
             desc: "Powerful pop song about sacrifice and heartbreak in love.",
@@ -193,7 +195,8 @@ let songData = {
                     No, no, no, no`
     }, {
          // 4-------------------------------------------------------------
-        image: "img/song/Bruno Mars - Grenade-Talking To TheMoon.png",
+         category: "Pop",
+        image: "img/song/Bruno Mars - Grenade-TalkingToTheMoon.png",
         title: "Talking To The Moon",
         artist: "Bruno Mars",
         desc: "Melancholic ballad about longing and loneliness when separated from a loved one.",
@@ -244,6 +247,7 @@ let songData = {
                 I know you're somewhere out there, somewhere far away`
     }, {
         // 5-------------------------------------------------------------
+        category: "Pop",
         image: "img/song/Bruno Mars - Versace on the Floor.jpg",
         title: "Versace on the Floor",
         artist: "Bruno Mars",
@@ -254,6 +258,7 @@ let songData = {
         lyrics:``
     }, {
         // 6-------------------------------------------------------------
+        category: "Pop",
         image: "img/song/One Direction - Midnight Memories.jpeg",
         title: "Midnight Memories",
         artist: "One Direction",
@@ -317,10 +322,10 @@ let songData = {
                 Versace on the floor
                 Floor
                 Floor`
-    }],
-    RnB:[{
+    },{
          // 7-------------------------------------------------------------
-        image: "img/song/Juicy Luicy - Tanpa Tergesa.jpg",
+         category: "R&B",
+         image: "img/song/Juicy Luicy - Tanpa Tergesa.jpg",
         title: "Tanpa Tergesa",
         artist:"Juicy Luicy",
         desc: "A heartfelt pop song by Juicy Luicy about embracing life's moments without rushing, focusing on living in the present and cherishing love.",
@@ -369,6 +374,8 @@ let songData = {
                 Tanpa tergesa` 
     }, {
          // 8-------------------------------------------------------------
+        
+        category: "R&B",
         image: "img/song/Tenxi, Naykilla & Jemsii - Garam & Madu (Sakit Dadaku).jpg",
         title: "Garam & Madu (Sakit Dadaku)",
         artist: "Tenxi, Naykilla & Jemsii",
@@ -428,7 +435,8 @@ let songData = {
                 Yang kaumau cuma aku`
     }, {
          // 9-------------------------------------------------------------
-        image: "img/song/The Groove - Kuingin.jpeg",
+         category: "R&B",
+         image: "img/song/The Groove - Kuingin.jpeg",
         title: "Kuingin",
         artist: "The Groove",
         desc: "Soulful R&B track with emotional depth and smooth instrumentation.",
@@ -487,11 +495,12 @@ let songData = {
                 Ku ingin kau ada, ku ingin kau tahu
                 Mengertilah, oh, kasih
                 Dan cobalah untuk mengerti`
-    }],
-    CampusAnthem:[{
+    },{
+        // 10-------------------------------------------------------------
+        category:"Campus Anthem",
         image: "img/song/HYMNE BINUS UNIVERSITY.jpeg",
         title: "HYMNE BINUS UNIVERSITY",
-        artist: "Various Artists",
+        artist: "Bina Nusantara",
         desc: "Inspirational anthem representing pride and spirit of Binus University.",
         release: "Year Date: 2018",
         mood: "Pride",
@@ -514,6 +523,4 @@ let songData = {
                 Teguhkan langkah arungi zaman 
                 Perguruan tinggi Bina Nusantara
                 Wujudkan Indonesia jaya`
-    }]
-
-}
+    }];

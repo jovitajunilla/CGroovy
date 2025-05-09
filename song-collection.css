@@ -92,6 +92,7 @@ body{
     gap: 0.5rem;
     object-fit: cover;
     width: 200px;
+    color: white;
 }
 
 .song:hover{
@@ -108,17 +109,18 @@ body{
 
 .song-title{
     font-family: "Nexa Heavy";
-    color: white;
     font-size:18px;
 }
 
 .song-desc{
-    color: white;
     font-size: 15px;
 }
 
 .img-song-list{
     border-radius: 10px;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
 }
 
 .white-bold{

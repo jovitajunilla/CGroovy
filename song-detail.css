@@ -24,7 +24,7 @@
 
 #background-blur {
   position: absolute;
-  background-image: url(image-songdetail/song-list1.png);
+  background-image: url("img/song/Bruno Mars - Grenade-TalkingToTheMoon.png");
   background-size: cover;
   background-repeat: no-repeat;
   filter: blur(6px);
