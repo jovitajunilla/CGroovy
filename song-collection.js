@@ -42,7 +42,10 @@ function displaySong() {
             <p class="song-mood">${song.mood}</p>`;
 
             songDiv.addEventListener("click",function(){
-                detail
+                console.log(song)
+                
+                localStorage.setItem("selectedSong",JSON.stringify(song));
+                window.location.href="song-detail.html";
             });
       listSong.appendChild(songDiv);
     });

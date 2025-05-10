@@ -81,7 +81,9 @@
 .img-song {
   object-fit: cover;
   border-radius: 10px;
-  height: 100%;
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
 }
 
 #buttonPlay {
@@ -112,8 +114,9 @@
   justify-content: space-between;
 }
 
-.lyrics {
+#lyrics {
   white-space: pre-line;
+  font-size: large;
 }
 
 #lyrics-container {
