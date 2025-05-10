@@ -38,8 +38,8 @@ function displaySong() {
             <p class="song-title">${song.title}</p>
             <p class="song-artist">${song.artist}</p>
             <p class="song-desc">${song.desc}</p>
-            <p class="song-release">${song.release}</p>
-            <p class="song-mood">${song.mood}</p>`;
+            <p class="song-release">Year Date: ${song.release}</p>
+            <p class="song-mood">Mood: ${song.mood}</p>`;
 
             songDiv.addEventListener("click",function(){
                 console.log(song)

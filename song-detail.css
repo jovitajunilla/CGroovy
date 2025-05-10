@@ -24,10 +24,9 @@
 
 #background-blur {
   position: absolute;
-  background-image: url("img/song/Bruno Mars - Grenade-TalkingToTheMoon.png");
   background-size: cover;
   background-repeat: no-repeat;
-  filter: blur(6px);
+  filter: blur(10px);
   z-index: -2;
   height: 100%;
   width: 100%;
@@ -39,7 +38,7 @@
   z-index: -1;
   height: 100%;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.85);
 }
 
 #content {
@@ -92,7 +91,7 @@
   font-size: 20px;
   background-color: #2b2b2b;
   border-radius: 6px;
-  padding: 0.5rem 1rem;
+  padding: 0.7rem 1rem;
   width: fit-content;
   gap: 0.5rem;
   p {

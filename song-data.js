@@ -5,7 +5,7 @@ export const songData = [{
         title: "I Want It That Way",
         artist:"Backstreet Boys",
         desc: "A catchy pop ballad about longing and unrequited love, expressing a desire to be together despite the obstacles.",
-        release:"Year Date: 1999",
+        release:"1999",
         mood:"Romance",
         audio:"audio/Backstreet Boys - I Want It That Way.mp3",
         lyrics:`Yeah
@@ -78,7 +78,7 @@ export const songData = [{
         title: "What Was I Made For",
         artist:"Billie Eilish",
         desc: "A reflective and emotional song about searching for purpose and understanding one’s identity, exploring feelings of uncertainty and longing.",
-        release:"Year Date: 2023",
+        release:"2023",
         mood:"Sad",
         audio:"audio/Billie Eilish - What Was I Made For.mp3",
         lyrics:`I used to float
@@ -130,7 +130,7 @@ export const songData = [{
             title: "Grenade",
             artist: "Bruno Mars",
             desc: "Powerful pop song about sacrifice and heartbreak in love.",
-            release: "Year Date: 2010",
+            release: "2010",
             mood: "Heartbreak",
             audio: "audio/Bruno Mars - Grenade.mp3",
             lyrics:`Easy come, easy go, that's just how you live
@@ -200,7 +200,7 @@ export const songData = [{
         title: "Talking To The Moon",
         artist: "Bruno Mars",
         desc: "Melancholic ballad about longing and loneliness when separated from a loved one.",
-        release: "Year Date: 2010",
+        release: "2010",
         mood: "Romance",
         audio: "audio/Bruno Mars - Talking To The Moon.mp3",
         lyrics: `I know you're somewhere out there, somewhere far away
@@ -252,7 +252,7 @@ export const songData = [{
         title: "Versace on the Floor",
         artist: "Bruno Mars",
         desc: "Smooth romantic song with sensual vibes and lyrics about intimacy and love.",
-        release: "Year Date: 2017",
+        release: "2017",
         mood: "Romance",
         audio: "audio/Bruno Mars - Versace on the Floor.mp3",
         lyrics:`Let's take our time tonight, girl
@@ -325,65 +325,65 @@ export const songData = [{
         title: "Midnight Memories",
         artist: "One Direction",
         desc: "Energetic pop-rock track about youthful freedom and unforgettable nights.",
-        release: "Year Date: 2014",
+        release: "2014",
         mood: "Party",
         audio: "audio/One Direction - Midnight Memories.mp3",
-        lyrics: `Let's take our time tonight, girl
-                Above us, all the stars are watchin'
-                There's no place I'd rather be in this world
-                Your eyes are where I'm lost in
+        lyrics: `One, two, three
 
-                Underneath the chandelier
-                We're dancin' all alone
-                There's no reason to hide
-                What we're feelin' inside right now
+                Straight off the plane to a new hotel
+                Just touched down, you could never tell
+                Ah, a big house party with a crowded kitchen
+                People talk (shh) but we don't listen
 
-                So, baby, let's just turn down the lights and close the door
-                Ooh, I love that dress, but you won't need it anymore
-                No, you won't need it no more
-                Let's just kiss 'til we're naked, baby
+                Tell me that I'm wrong but I do what I please
+                Way too many people in the Addison Lee
+                Now I'm at the age when I know what I need, oh, whoa
 
-                Versace on the floor
-                Ooh, take it off for me, for me, for me, for me now, girl
-                Versace on the floor
-                Ooh, take it off for me, for me, for me, for me now, girl, mm
+                Midnight memories
+                Oh-oh-oh-oh-oh
+                Baby, you and me
+                Stumblin' in the street
+                Singin', singin', singin', singin'
+                Midnight memories
+                Oh-oh-oh-oh-oh
+                Anywhere we go, never say no
+                Just do it, do it, do it, do it
 
-                I'll unzip the back and watch it fall
-                While I kiss your neck and shoulders
-                No, don't be afraid to show it all
-                I'll be right here, ready to hold ya
+                Five foot something with the skinny jeans
+                Don't look back, baby, follow me
+                I don't know where I'm going but I'm finding my way
+                Same old sh- but a different day
 
-                Girl, you know you're perfect from
-                Your head down to your heels
-                Don't be confused by my smile
-                'Cause I ain't never been more for real, for real
+                Tell me that I'm wrong but I do what I please
+                Way too many people in the Addison Lee
+                Now I'm at the age when I know what I need, oh, whoa
 
-                So just turn down the lights (down the lights) and close the door (close the door)
-                Ooh, I love that dress, but you won't need it anymore
-                No, you won't need it no more
-                Let's just kiss 'til we're naked, baby
+                Midnight memories
+                Oh-oh-oh-oh-oh
+                Baby, you and me
+                Stumblin' in the street
+                Singin', singin', singin', singin'
+                Midnight memories
+                Oh-oh-oh-oh-oh
+                Anywhere we go, never say no
+                Just do it, do it, do it, do it
 
-                Versace on the floor
-                Ooh, take it off for me, for me, for me, for me now, girl
-                Versace on the floor
-                Ooh, take it off for me, for me, for me, for me now, girl
+                You and me and all our friends
+                I don't care how much we spend
+                Baby, this is what the night is for
+                I know nothing's making sense
+                For tonight let's just pretend
+                I don't wanna stop so give me more
 
-                Dance
-
-                (It's warmin' up) can you feel it?
-                (It's warmin' up) can you feel it?
-                (It's warmin' up) can you feel it, baby?
-                (It's warmin' up) oh, seems like you're ready for more, more, more
-                Let's just kiss 'til we're naked
-
-                Ooh, Versace on the floor
-                Hey, baby, take it off for me, for me, for me, for me now, girl
-                Versace on the floor
-                Oh, oh, take it off for me, for me, for me, for me now, girl
-
-                Versace on the floor
-                Floor
-                Floor`
+                Midnight memories
+                Oh-oh-oh-oh-oh
+                Baby, you and me (ayy)
+                Stumblin' in the street
+                Singin', singin', singin', singin'
+                Midnight memories
+                Oh-oh-oh-oh-oh
+                Anywhere we go, never say no
+                Just do it, do it, (yeah) do it, do it`
     },{
          // 7-------------------------------------------------------------
          category: "R&B",
@@ -391,7 +391,7 @@ export const songData = [{
         title: "Tanpa Tergesa",
         artist:"Juicy Luicy",
         desc: "A heartfelt pop song by Juicy Luicy about embracing life's moments without rushing, focusing on living in the present and cherishing love.",
-        release:"Year Date: 2018",
+        release:"2018",
         mood:"Calm",
         audio:"audio/Juicy Luicy - Tanpa Tergesa.mp3",
         lyrics:`Jaga dulu jarak kita
@@ -442,7 +442,7 @@ export const songData = [{
         title: "Garam & Madu (Sakit Dadaku)",
         artist: "Tenxi, Naykilla & Jemsii",
         desc: "Emotional R&B collaboration blending heartfelt vocals and soulful beats.",
-        release: "Year Date: 2024",
+        release: "2024",
         mood: "Party",
         audio: "audio/Tenxi, Naykilla & Jemsii - Garam & Madu (Sakit Dadaku).mp3",
         lyrics:`Tanpa ku sadar, ku mulai bertanya
@@ -502,7 +502,7 @@ export const songData = [{
         title: "Kuingin",
         artist: "The Groove",
         desc: "Soulful R&B track with emotional depth and smooth instrumentation.",
-        release: "Year Date: 1999",
+        release: "1999",
         mood: "Energetic",
         audio: "audio/The Groove - Kuingin.mp3",
         lyrics:`Kucoba sampaikan semua ini
@@ -564,7 +564,7 @@ export const songData = [{
         title: "HYMNE BINUS UNIVERSITY",
         artist: "Bina Nusantara",
         desc: "Inspirational anthem representing pride and spirit of Binus University.",
-        release: "Year Date: 2018",
+        release: "2018",
         mood: "Pride",
         audio: "audio/HYMNE BINUS UNIVERSITY.mp3",
         lyrics:`Perguruan tinggi Bina Nusantara
