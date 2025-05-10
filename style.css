@@ -48,7 +48,6 @@ body{
 
 .top-content{
     display: flex;
-    flex-wrap: wrap;
     gap: 50px;
 }
 
@@ -106,12 +105,21 @@ body{
   }
   
   .each-content{
+    width: 200px;
     display: flex;
     flex-direction: column;
     gap: 7px;
     
+
+    img{
+      width: auto;
+      height: 200px;
+      object-fit: cover;
+    }
+    
     h4{
       font-family: 'Nexa Regular';
+      word-wrap: break-word;
     }
 
     h5{
@@ -147,10 +155,26 @@ body{
     box-sizing: border-box;
 }
 
-.content-group{
+#content-group{
     display: flex;
+    flex-wrap: wrap;
     gap: 40px;
 }
+
+/* ANIMATION */
+
+.each-content:hover{
+  transform: scale(1.01);
+
+  img{
+    filter: brightness(120%);
+  }
+  
+  p{
+    color: rgb(204, 204, 204);
+  }
+}
+
 
 /* --END CONTENT------------------------------------------- */
 
