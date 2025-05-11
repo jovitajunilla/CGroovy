@@ -49,7 +49,7 @@ h2{
     margin-left: 20px;
 }
 
-#nums{
+#ageFld{
     width: 70px;
 }
 
@@ -72,4 +72,9 @@ h2{
 
 .formsSection{
     margin-bottom: 15px;
+}
+
+#errorMessage{
+    font-size: 10pt;
+    -webkit-text-fill-color: red;
 }

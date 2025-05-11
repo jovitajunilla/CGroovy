@@ -14,49 +14,54 @@
         </div>
 
         <div id="formDiv">
-            <form id="forms" action="index.html">
+            <form id="forms" action="index.html" onsubmit="return checkValid()">
                <div class="formsSection">
                     Full Name
                     <br>
-                    <input type="text" name="name" class="texts">
+                    <input type="text" name="name" class="texts" id="nameFld" onblur="nameValidation()">
                 </div>
                 
                <div class="formsSection">
                     Age
                     <br>
-                    <input type="number" name="age" id="nums" class="texts">
+                    <input type="number" name="age" class="texts" id="ageFld" onblur="ageValidation()">
                 </div>
                 
                 <div class="formsSection">
                     Gender
                     <br>
-                    <input type="radio" name="gender" class="genderTogg">Male
+                    <input type="radio" name="gender" class="genderTogg" id="maleBtn">Male
                     <input type="radio" name="gender" class="genderTogg" id="femaleBtn">Female
                 </div>
 
                 <div class="formsSection">
                     Email
                     <br>
-                    <input type="text" name="email" class="texts">
+                    <input type="text" name="email" class="texts" id="emailFld" onblur="emailValidation()">
                 </div>
 
                 <div class="formsSection">
                     Password
                     <br>
-                    <input type="password" name="password" class="texts">
+                    <input type="password" name="password" class="texts" id="passFld" onblur="passwordValidation()">
                 </div>
 
                 <div class="formsSection">
                     Re-Password
                     <br>
-                    <input type="password" name="password" class="texts">
+                    <input type="password" name="password" class="texts" id="rePassFld" onblur="rePassValidation()">
+                </div>
+
+                <div class="formsSection" >
+                    <p id="errorMessage"></p>
                 </div>
 
                 <div class="formsSection" id="buttonCont">
-                    <input type="submit" value="Register" id="regButton">
+                    <input type="submit" value="Register" id="regButton" onclick="genderValidation()">
                 </div>
             </form>
         </div>
     </div>
 </body>
+<script src="register.js"></script>
 </html>
