@@ -49,6 +49,7 @@ body{
 .top-content{
     display: flex;
     gap: 50px;
+    box-sizing: border-box;
 }
 
 .unique-value-point {
@@ -62,7 +63,7 @@ body{
     font-size: 15px;
     background-color: #191919;
     height: 50vh;
-    width: 45vh;
+    width: 350px;
     
     box-sizing: border-box;
     
@@ -103,6 +104,12 @@ body{
     flex-wrap: wrap;
     gap: 40px;
   }
+
+  .content-group-recommendation{
+    display: flex;
+    gap: 40px;
+    overflow: hidden; 
+  }
   
   .each-content{
     width: 200px;
@@ -127,7 +134,7 @@ body{
       -webkit-text-fill-color: #C4C4C4;
     }
 
-}
+  }
 
 /* RECOMMENDATION */
 
@@ -138,11 +145,26 @@ body{
   
   background-color: #191919;
   height: auto;
-  padding: 50px 80px;
+  padding: 50px 50px;
 
   h1{
-
+    box-sizing: border-box;
+    margin-left: 5vh;
   }
+
+}
+
+.slider-recommendation{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  box-sizing: border-box;
+
+  .button-slider{
+    width: 40px;
+    height: 40px;
+  }
+
 }
 
 .bottom-content{
