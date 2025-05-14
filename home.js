@@ -51,13 +51,22 @@ function displaySongRecommendation(){
         contentGroupRecommendation.appendChild(songBox);
 
         songBox.addEventListener("click", function(){
-            localStorage.setItem("selectedSong", JSON.stringify(song));
+            localStorage.setItem("selectedSong", JSON.stringify(recSong));
             window.location.href="song-detail.html";
         });
         
     })
-
 }
+
+document.getElementById("button-slider-left").addEventListener("click", function(){
+    const container = document.getElementById("content-group-recommendation");
+    container.scrollLeft -= 220;
+})
+
+document.getElementById("button-slider-right").addEventListener("click", function(){
+    const container = document.getElementById("content-group-recommendation");
+    container.scrollLeft += 220;
+})
 
 // contentGroup.innerHTML = `<div class="each-content">
 //               <img src="img/gambar1-bestseller.png" alt="" />

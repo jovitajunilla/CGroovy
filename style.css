@@ -108,7 +108,13 @@ body{
   .content-group-recommendation{
     display: flex;
     gap: 40px;
-    overflow: hidden; 
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+  }
+
+  .content-group-recommendation::-webkit-scrollbar {
+  display: none;
   }
   
   .each-content{
@@ -163,6 +169,11 @@ body{
   .button-slider{
     width: 40px;
     height: 40px;
+  }
+
+  .button-slider:hover{
+    width: 43px;
+    height: 43px;
   }
 
 }
