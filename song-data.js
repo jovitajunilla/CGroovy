@@ -559,30 +559,188 @@ export const songData = [{
                 Dan cobalah untuk mengerti`
     },{
         // 10-------------------------------------------------------------
-        category:"Campus Anthem",
-        image: "img/song/HYMNE BINUS UNIVERSITY.jpeg",
-        title: "HYMNE BINUS UNIVERSITY",
-        artist: "Bina Nusantara",
-        desc: "Inspirational anthem representing pride and spirit of Binus University.",
-        release: "2018",
-        mood: "Pride",
-        audio: "audio/HYMNE BINUS UNIVERSITY.mp3",
-        lyrics:`Perguruan tinggi Bina Nusantara
-                Wahana tuk semaikan benih harapan
-                Mendidik dan memberdayakan sesama
-                Membangun nusa berkiprah untuk bangsa
+        category:"K-Pop",
+        image: "img/song/Black Pink - Boombayah.jpeg",
+        title: "Boombayah",
+        artist: "Blackpink",
+        desc: "Boombayah is a high-energy song by Blackpink that celebrates confidence, freedom, and self-expression.",
+        release: "2016",
+        mood: "Energetic",
+        audio: "audio/Black Pink - Boombayah.mp3",
+        lyrics:`BLACKPINK in your area
+        BLACKPINK in your area
 
-                Berlambarkan kasih, cita dan karsa dengan
-                rahmat Tuhan berdasar Pancasila
-                Menjunjung tinggi nilai kejujuran 
-                Menghidupi keadilan 
+        Been a bad girl, I know I am
+        And I'm so hot, I need a fan
+        I don't want a boy, I need a man
 
-                Binusian nyalakan api di dada
-                Rengkuh rasa hormat dan menghargai sesama
-                Tekun dan gigih raihlah yang terbaik
-                Kobarkan inovasi di penjuru semesta 
-                Bulatkan tekad dan niat bersama
-                Teguhkan langkah arungi zaman 
-                Perguruan tinggi Bina Nusantara
-                Wujudkan Indonesia jaya`
+        Click-clack
+        Badda bing badda boom
+        Muneul bakchamyeon modu nal barabom
+        Gudi aesseo noryeok an haedo
+        Modeun namjadeuleun kopiga pangpangpang
+        Pangpang parapara pangpangpang
+        Jigeum nal wihan chukbaereul jjanjjanjjan
+        Hands up nae sonen
+        Bottle full o' henny
+        Nega malloman deuddeon gyaega naya Jennie
+
+        Chumchuneun bulbicheun nal gamssago done
+        Black to the pink
+        Eodiseodeun teukbyeolhae Oh yes
+        Chyeoda bodeun maldeun I wanna dance
+        Like ttaradaradanttan
+        Ttaradaradanttan ttudurubbau
+
+        Joha i bunwigiga joha
+        Joha nan jigeum nega joha
+        Jeongmal banhaesseo oneul bam
+        Neowa chumchugo sipeo
+
+        BOOMBAYAH
+        YAH YAH YAH BOOMBAYAH
+        YAH YAH YAH BOOMBAYAH
+        YAH YAH YAH YAH
+        BOOM BOOM BA BOOM
+        BOOM BA oppa
+        YAH YAH YAH YAH YAH YAH
+        YAH YAH YAH YAH
+        YAH YAH YAH YAH YAH YAH
+        YAH YAH YAH YAH oppa
+        YAH YAH YAH YAH YAH YAH
+        YAH YAH YAH YAH
+        YAH YAH YAH YAH YAH YAH
+        YAH BOOM BOOM BA
+        BOOMBAYAH
+
+        BLACKPINK in your area
+
+        Ije dallyeoyaji mwol eotteokhae
+        Nan cheol eobseo geob eobseo Man
+        Middle finger up, F U pay me
+        90s baby, I pump up the jam
+        Dallyeobwa dallyeobwa oppaya LAMBO
+        Oneuleun neowa na jeolmeumeul GAMBLE
+        Gamhi nal makjima hoksina nuga nal makado
+        I'm gonna go brrrr RAMBO
+
+        Ne soni nae heorireul gamssago done
+        Front to my back
+        Nae mommaeneun teukbyeolhae Oh yes
+        Ne nunbicheun I know you wanna touch
+        Like touch touch touch
+        Touch ttudurubbau
+
+        Joha i bunwigiga joha
+        Joha nan jigeum nega joha
+        Jeongmal meosisseo oneul bam
+        Neowa chumchugo sipeo
+
+        BOOMBAYAH
+        YAH YAH YAH BOOMBAYAH
+        YAH YAH YAH BOOMBAYAH
+        YAH YAH YAH YAH
+        BOOM BOOM BA
+        BOOM BOOM BA oppa
+        YAH YAH YAH YAH YAH
+        YAH YAH YAH YAH YAH
+        YAH YAH YAH YAH YAH
+        YAH YAH YAH YAH YAH oppa
+        YAH YAH YAH YAH YAH
+        YAH YAH YAH YAH YAH
+        YAH YAH YAH YAH YAH
+        YAH YAH BOOM BOOM BA
+        BOOMBAYAH
+
+        Oneuleun maen jeongsin ttawin beorigo
+        Haneuleul neomeoseo olla gal geoya
+        Kkeuteul moreuge ppalli dalligo sipeo
+        Let's go, let's go
+
+        Oneuleun maen jeongsin ttawin beorigo
+        Haneuleul neomeoseo olla gal geoya
+        Kkeuteul moreuge ppalli dalligo sipeo
+        Let's go, let's go`
+    },{
+        // 10-------------------------------------------------------------
+        category:"K-Pop",
+        image: "img/song/BTS - Butter.jpeg",
+        title: "Butter",
+        artist: "BTS",
+        desc: "A catchy, upbeat pop track released in 2021, featuring smooth, feel-good vibes and confident lyrics about love and attraction, with a retro, disco-inspired sound that highlights the group's charisma and charm.",
+        release: "2021",
+        mood: "Energetic",
+        audio: "audio/BTS - Butter.mp3",
+        lyrics:`Smooth like butter
+        Like a criminal undercover
+        Gon' pop like trouble
+        Breakin' into your heart like that (Ooh)
+        Cool shade stunner
+        Yeah, I owe it all to my mother
+        Hot like summer
+        Yeah, I'm makin' you sweat like that
+        Break it down
+
+        Oh, when I look in the mirror
+        I'll melt your heart into two
+        I got that superstar glow so (Ooh)
+        Do the boogie like
+
+        Side step, right, left to my beat
+        High like the moon, rock with me, baby
+        Know that I got that heat
+        Let me show you 'cause talk is cheap
+        Side step, right, left to my beat
+        Get it, let it roll
+
+        Smooth like butter
+        Pull you in like no other
+        Don't need no Usher
+        To remind me you got it bad
+        Ain't no other
+        That can sweep you up like a robber
+        Straight up, I got ya
+        Makin' you fall like that
+        Break it down
+
+        Oh, when I look in the mirror
+        I'll melt your heart into two
+        I got that superstar glow so (Ooh)
+        Do the boogie like
+
+        Side step, right, left to my beat
+        High like the moon, rock with me, baby
+        Know that I got that heat
+        Let me show you 'cause talk is cheap
+        Side step, right, left to my beat
+        Get it, let it roll
+
+        Get it, let it roll
+        Get it, let it roll
+
+        Ice on my wrist, I'm the nice guy
+        Got the right body and the right mind
+        Rollin' up to party, got the right vibe
+        Smooth like (Butter), hate us (Love us)
+        Fresh boy pull up and we lay low
+        All the playas get movin' when the bass low
+        Got ARMY right behind us when we say so
+        Let's go
+
+        Side step, right, left to my beat (Right, left to my beat)
+        High like the moon, rock with me, baby
+        Know that I got that heat
+        Let me show you 'cause talk is cheap (You know that talk is cheap)
+        Side step, right, left to my beat
+        Get it, let it roll
+
+        Smooth like (Butter), cool shade (Stunner)
+        Ain't you know we don't stop
+        Hot like (Summer), ain't no (Bummer)
+        You be like, oh my God
+        We gon' make you rock and you say (Yeah)
+        We gon' make you bounce and you say (Yeah)
+        Hotter? Sweeter! Cooler? Butter!
+
+        Get it, let it roll`
     }];
