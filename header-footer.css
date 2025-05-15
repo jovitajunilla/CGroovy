@@ -112,28 +112,16 @@ footer{
     color: white;
     font-family: 'Nexa Thin';
     h1{
-      font-size: 30px;
+      font-size: 20px;
     }
   }
   
   #footer-all{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     align-items: center;
+    justify-content: center;
     padding: 2rem;
-  }
-  
-  #right-footer{
-    display: flex;
-    flex-direction: row;
-    gap: 2rem;
-  }
-  
-  .right-list{
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
   }
 
 /* END FOOTER -------------------------------------------------- */

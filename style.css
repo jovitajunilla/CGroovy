@@ -200,7 +200,7 @@ body{
   transform: scale(1.01);
 
   img{
-    filter: brightness(120%);
+     filter: brightness(70%);
   }
   
   p{
