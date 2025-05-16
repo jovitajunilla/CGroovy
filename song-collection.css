@@ -166,33 +166,21 @@ body {
 filter: brightness(70%);
 }
 
+
+
 /* --END CONTENT------------------------------------------- */
 
 @media screen and (max-width:800px){
-    body{
-        width: 100vw;
-        height: 100vh;
-    }
-    .navbar{
-        width: 100%;
-    }   
-
-    .songCollection{
-        width: 100%;
-        margin-right: 0%;
-    }
 
     .black-container{
         justify-content: center;
+        width: fit-content;
     }
 
-    .song-list{
-        justify-content: center;
+    .songCollection{
+      justify-content: center;
     }
 
-    #footer-all{
-        width: 100vw;
-        background-color: #191919;
-        
-    }
+
+
 }
