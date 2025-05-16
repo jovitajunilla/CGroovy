@@ -162,4 +162,8 @@ body {
   height: 30px;
 }
 
+.image-mini2:hover{
+filter: brightness(70%);
+}
+
 /* --END CONTENT------------------------------------------- */
