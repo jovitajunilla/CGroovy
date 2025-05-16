@@ -23,6 +23,11 @@
 body{
     background-color: #1F1F1F;
     font-family: 'Nexa Regular';
+
+    h4{
+      font-size: 16px;
+    }
+
 }
   
   /* CONTENT -------------------------------------------------------------- */
@@ -68,9 +73,8 @@ body{
     box-sizing: border-box;
     
     h4{
-      font-size: 15px;
       text-align: center;
-      font-family: 'Nexa Thin';
+      font-family: 'Nexa Regular';
       -webkit-text-fill-color: white;
       white-space: nowrap;         /* Mencegah teks pindah baris */
     }
@@ -97,6 +101,12 @@ body{
     display: flex;
     flex-direction: column;
     gap: 20px;
+
+    h1{
+      font-family: 'Nexa Heavy';
+      font-size: 30px;
+    }
+
   }
   
   .content-group{
@@ -131,11 +141,13 @@ body{
     }
     
     h4{
+      font-size: 16px;
       font-family: 'Nexa Regular';
       word-wrap: break-word;
     }
-
+    
     h5{
+      font-size: 14px;
       font-family: 'Nexa Thin';
       -webkit-text-fill-color: #C4C4C4;
     }
@@ -154,6 +166,8 @@ body{
   padding: 50px 50px;
 
   h1{
+    font-family: 'Nexa Heavy';
+    font-size: 30px;
     box-sizing: border-box;
     margin-left: 5vh;
   }

@@ -31,7 +31,7 @@ body {
 
 #songCollectionTitle {
   font-family: "Nexa Heavy";
-  font-size: 28px;
+  font-size: 30px;
 }
 
 #buttonPlay {
@@ -43,7 +43,7 @@ body {
   padding: 0.5rem 1rem;
   width: fit-content;
   gap: 0.5rem;
-  p {
+  h3 {
     font-family: "Nexa Regular";
     align-self: center;
   }
