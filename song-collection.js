@@ -16,6 +16,11 @@ function displaySong() {
     songList[song.category].push(song);
   });
 
+  const durationInfo = document.getElementById("durationInfo");
+  durationInfo.innerHTML = ` ${songData.length} song - 1 hour 53 minutes`;
+
+
+
   for (let category in songList) {
     const categoryDiv = document.createElement("section");
     categoryDiv.classList.add("songCollection");
@@ -58,28 +63,28 @@ function displaySong() {
           <img src="img/play-icon-2.png" alt="" class="image-mini2" id="play-icon">
           <audio src="${song.audio}" id="song-audio" preload="auto"></audio>`;
 
-        localStorage.setItem("selectedSong",JSON.stringify(song));
+        localStorage.setItem("selectedSong", JSON.stringify(song));
         // window.location.href="song-detail.html";
-        
+
         const playIcon = document.getElementById("play-icon");
         const songAudio = document.getElementById("song-audio");
-        
+
         songAudio.play();
         playIcon.src = "img/pause-icon.png";
-        
-        playIcon.addEventListener("click",function(){
-          if(songAudio.paused){
+
+        playIcon.addEventListener("click", function () {
+          if (songAudio.paused) {
             songAudio.play();
             playIcon.src = "img/pause-icon.png";
-          }else{
+          } else {
             songAudio.pause();
             playIcon.src = "img/play-icon-2.png";
           }
-        })
+        });
 
-        songAudio.addEventListener("ended",function(){
+        songAudio.addEventListener("ended", function () {
           playIcon.src = "img/play-icon-2.png";
-        })
+        });
       });
       listSong.appendChild(songDiv);
     });

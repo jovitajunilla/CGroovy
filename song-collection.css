@@ -49,6 +49,10 @@ body {
   }
 }
 
+#buttonPlay:hover {
+  filter: brightness(120%);
+}
+
 #image-play {
   width: 30px;
 }
@@ -162,25 +166,19 @@ body {
   height: 30px;
 }
 
-.image-mini2:hover{
-filter: brightness(70%);
+.image-mini2:hover {
+  filter: brightness(70%);
 }
-
-
 
 /* --END CONTENT------------------------------------------- */
 
-@media screen and (max-width:800px){
+@media screen and (max-width: 800px) {
+  .black-container {
+    justify-content: center;
+    width: fit-content;
+  }
 
-    .black-container{
-        justify-content: center;
-        width: fit-content;
-    }
-
-    .songCollection{
-      justify-content: center;
-    }
-
-
-
+  .songCollection {
+    justify-content: center;
+  }
 }
