@@ -211,3 +211,72 @@ body{
 
 /* --END CONTENT------------------------------------------- */
 
+
+@media screen and (max-width: 800px) { 
+
+  .top-content{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    box-sizing: border-box;
+  }
+
+  .unique-value-point {
+    padding: 30px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    
+    font-size: 15px;
+    background-color: #191919;
+    height: 50vh;
+    width: auto;
+    min-width: 300px;
+    
+    box-sizing: border-box;
+    
+    h4{
+      font-size: 15px;
+      text-align: center;
+      font-family: 'Nexa Thin';
+      -webkit-text-fill-color: white;
+      white-space: nowrap;         /* Mencegah teks pindah baris */
+    }
+    
+    img{
+      margin-left: 20px;
+    }
+    
+    button{
+      font-family: 'Nexa Heavy';
+      font-size: 20px;
+      height: 40px;
+      width: 170px;
+      border: none;
+      border-radius: 5px;
+      -webkit-text-fill-color: #ffffff;
+      background-color: #B838A7;
+    }
+  }
+
+  .recommendation{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  
+  background-color: #191919;
+  height: auto;
+  padding: 50px 50px;
+
+  min-width: 300px;
+
+  h1{
+    box-sizing: border-box;
+    word-break: break-word; /* biar kalau terlalu panjang bisa pecah */
+  }
+
+}
+
+}
