@@ -1,4 +1,4 @@
-import {songData} from "./song-data.js";
+import { songData } from "./song-data.js";
 
 displaySong();
 displaySongRecommendation();
@@ -23,8 +23,8 @@ function displaySong(){
         // contentGroupRecommendation.appendChild(songBoxClone);
         
         songBox.addEventListener("click", function(){
-            localStorage.setItem("selectedSong", JSON.stringify(song));
-            window.location.href="song-detail.html";
+            // localStorage.setItem("selectedSong", JSON.stringify(song));
+            // window.location.href="song-detail.html";
 
             
         });

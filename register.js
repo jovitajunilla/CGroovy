@@ -17,6 +17,8 @@ let passwordIsValid = false;
             document.getElementById("nameFld").style.border = "1px solid #BEBEBE"
             nameIsValid= true;
         } 
+
+        return {nameInput};
     }
 
     function ageValidation(){
@@ -88,7 +90,7 @@ let passwordIsValid = false;
     }
 
 
-function checkValid(){
+    function checkValid(){
     if(nameIsValid==true && ageIsValid ==true && genderIsValid==true && emailIsValid==true && passwordIsValid==true){
         return true;
     }else{

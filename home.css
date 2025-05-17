@@ -1,0 +1,296 @@
+@font-face {
+    font-family: 'Nexa Regular';
+    src: url(font/Nexa\ Regular.otf);
+}
+@font-face {
+    font-family: "Nexa Thin";
+    src: url("font/Nexa\ Thin.otf");
+}
+@font-face {
+    font-family: 'Nexa Bold';
+    src: url(font/Nexa\ Bold.otf);
+}
+@font-face {
+    font-family: 'Nexa Heavy';
+    src: url(font/Nexa\ Heavy.otf);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: #1F1F1F;
+    font-family: 'Nexa Regular';
+
+    h4{
+      font-size: 16px;
+    }
+
+}
+  
+  /* CONTENT -------------------------------------------------------------- */
+.content{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding: 40px;
+
+    h1{
+      font-size: 28px;
+    }
+
+    img{
+      width:25vh;
+    }
+
+}
+
+.content h1, h2, h3, h4, h5{
+   color: white;
+}
+
+.top-content{
+    display: flex;
+    gap: 50px;
+    box-sizing: border-box;
+}
+
+.unique-value-point {
+    padding: 30px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    
+    font-size: 15px;
+    background-color: #191919;
+    height: 50vh;
+    width: 350px;
+    
+    box-sizing: border-box;
+    
+    h4{
+      text-align: center;
+      font-family: 'Nexa Regular';
+      -webkit-text-fill-color: white;
+      white-space: nowrap;         /* Mencegah teks pindah baris */
+    }
+    
+    img{
+      margin-left: 20px;
+    }
+    
+    button{
+      font-family: 'Nexa Heavy';
+      font-size: 20px;
+      height: 40px;
+      width: 170px;
+      border: none;
+      border-radius: 5px;
+      -webkit-text-fill-color: #ffffff;
+      background-color: #B838A7;
+    }
+  }
+  
+  /* BEST SELLER */
+  
+  .best-seller{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    h1{
+      font-family: 'Nexa Heavy';
+      font-size: 30px;
+    }
+
+  }
+  
+  .content-group{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+
+  .content-group-recommendation{
+    display: flex;
+    gap: 40px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+  }
+
+  .content-group-recommendation::-webkit-scrollbar {
+  display: none;
+  }
+  
+  .each-content{
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    
+
+    img{
+      width: auto;
+      height: 200px;
+      object-fit: cover;
+    }
+    
+    h4{
+      font-size: 16px;
+      font-family: 'Nexa Regular';
+      word-wrap: break-word;
+    }
+    
+    h5{
+      font-size: 14px;
+      font-family: 'Nexa Thin';
+      -webkit-text-fill-color: #C4C4C4;
+    }
+
+  }
+
+/* RECOMMENDATION */
+
+.recommendation{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  
+  background-color: #191919;
+  height: auto;
+  padding: 50px 50px;
+
+  h1{
+    font-family: 'Nexa Heavy';
+    font-size: 30px;
+    box-sizing: border-box;
+    margin-left: 5vh;
+  }
+
+}
+
+.slider-recommendation{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  box-sizing: border-box;
+
+  .button-slider{
+    width: 40px;
+    height: 40px;
+  }
+
+  .button-slider:hover{
+    width: 43px;
+    height: 43px;
+  }
+
+}
+
+.bottom-content{
+    padding: 40px 40px;
+    background-color: #191919;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    box-sizing: border-box;
+}
+
+#content-group{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+/* ANIMATION */
+
+.each-content:hover{
+  transform: scale(1.01);
+
+  img{
+     filter: brightness(70%);
+  }
+  
+  p{
+    color: rgb(204, 204, 204);
+  }
+}
+
+
+/* --END CONTENT------------------------------------------- */
+
+
+@media screen and (max-width: 800px) { 
+
+  .top-content{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    box-sizing: border-box;
+  }
+
+  .unique-value-point {
+    padding: 30px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    
+    font-size: 15px;
+    background-color: #191919;
+    height: 50vh;
+    width: auto;
+    min-width: 300px;
+    
+    box-sizing: border-box;
+    
+    h4{
+      font-size: 15px;
+      text-align: center;
+      font-family: 'Nexa Thin';
+      -webkit-text-fill-color: white;
+      white-space: nowrap;         /* Mencegah teks pindah baris */
+    }
+    
+    img{
+      margin-left: 20px;
+    }
+    
+    button{
+      font-family: 'Nexa Heavy';
+      font-size: 20px;
+      height: 40px;
+      width: 170px;
+      border: none;
+      border-radius: 5px;
+      -webkit-text-fill-color: #ffffff;
+      background-color: #B838A7;
+    }
+  }
+
+  .recommendation{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  
+  background-color: #191919;
+  height: auto;
+  padding: 50px 50px;
+
+  min-width: 300px;
+
+  h1{
+    box-sizing: border-box;
+    word-break: break-word; /* biar kalau terlalu panjang bisa pecah */
+  }
+
+}
+
+}

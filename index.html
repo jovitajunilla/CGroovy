@@ -1,109 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>C'Groovy - Home</title>
-  </head>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="header-footer.css" />
-  <link rel="icon" href="img/icon.ico" />
-  <body>
-    <header>
-      <div class="navbar">
-        <h1>C'Groovy</h1>
-        <div class="right-menu">
-          <div class="menu-and-dropdown">
-            <h2 class="menu">Menu</h2>
-            <div class="dropdown-menu">
-              <h2 class="dropdown-menu-list" id="bold-list">Home</h2>
-              <a href="about-us.html"
-                ><h2 class="dropdown-menu-list">About Us</h2></a
-              >
-              <a href="song-collection.html"
-                ><h2 class="dropdown-menu-list">Song Collection</h2></a
-              >
-            </div>
-          </div>
-          <h1>|</h1>
-          <a href="register.html"
-            ><button id="register-button"><h2></h2>Register</button></a
-          >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="contentBox">
+        <div id="titleDiv">
+            <h2 id="groovy">C'Groovy</h2>
+            <h2>REGISTER</h2>
         </div>
-      </div>
-    </header>
 
-    <div class="content">
-      <div class="top-content">
-        <!-- UNIQUE VALUE POINT -->
-        <div class="unique-value-point">
-          <img src="img/unique-value-point.png" alt="unique-value-point.img" />
-          <div class="unique-value-point-text">
-            <h4>Recognize the Song, Not the Title?</h4>
-            <h4>Humming your voice to find the song</h4>
-          </div>
-          <button>START</button>
+        <div id="formDiv">
+            <form id="forms" action="home.html" method="get" onsubmit="checkValid()">
+               <div class="formsSection">
+                    Full Name
+                    <br>
+                    <input type="text" name="name" class="texts" id="nameFld" onblur="nameValidation()">
+                </div>
+                
+               <div class="formsSection">
+                    Age
+                    <br>
+                    <input type="number" class="texts" id="ageFld" onblur="ageValidation()">
+                </div>
+                
+                <div class="formsSection">
+                    Gender
+                    <br>
+                    <input type="radio" class="genderTogg" id="maleBtn">Male
+                    <input type="radio" class="genderTogg" id="femaleBtn">Female
+                </div>
+
+                <div class="formsSection">
+                    Email
+                    <br>
+                    <input type="text" class="texts" id="emailFld" onblur="emailValidation()">
+                </div>
+
+                <div class="formsSection">
+                    Password
+                    <br>
+                    <input type="password" class="texts" id="passFld" onblur="passwordValidation()">
+                </div>
+
+                <div class="formsSection">
+                    Re-Password
+                    <br>
+                    <input type="password" class="texts" id="rePassFld" onblur="rePassValidation()">
+                </div>
+
+                <div class="formsSection" >
+                    <p id="errorMessage"></p>
+                </div>
+
+                <div class="formsSection" id="buttonCont">
+                    <input type="submit" value="Register" id="regButton" onclick="genderValidation()">
+                </div>
+            </form>
         </div>
-        <!-- UNIQUE VALUE POINT -->
-
-        <!-- BEST SELLER CONTENT -->
-        <div class="best-seller">
-          <h1>Best Seller</h1>
-
-          <div class="content-group" id="content-group">
-            <!-- <div class="each-content">
-              <img src="img/gambar1-bestseller.png" alt="" />
-              <div class="content-teks">
-                <h4>Talking To The Moon</h4>
-                <h5>Bruno Mars</h5>
-              </div>
-            </div> -->
-          </div>
-        </div>
-        <!-- BEST SELLER CONTENT -->
-      </div>
-
-      <!-- RECOMMENDATION CONTENT -->
-      <div class="recommendation">
-        <h1>Recommendation</h1>
-
-        <div class="slider-recommendation">
-          <img
-            class="button-slider"
-            src="img/slider-button-left.png"
-            alt=""
-            id="button-slider-left"
-          />
-          <div
-            class="content-group-recommendation"
-            id="content-group-recommendation"
-          >
-            <!-- <div class="each-content">
-              <img src="img/gambar1-bestseller.png" alt="" />
-              <div class="content-teks">
-                <h4>Talking To The Moon</h4>
-                <h5>Bruno Mars</h5>
-              </div>
-            </div> -->
-          </div>
-          <img
-            class="button-slider"
-            src="img/slider-button-right.png"
-            alt=""
-            id="button-slider-right"
-          />
-        </div>
-      </div>
     </div>
-
-    <footer>
-      <div id="footer-all">
-        <h1>@2025 C'Groovy</h1>
-      </div>
-    </footer>
-
-    <script src="./jquery-3.6.0.min.js"></script>
-    <script src="home.js" type="module"></script>
-    <script src="song-data.js" type="module"></script>
-  </body>
+</body>
+<script src="register.js"></script>
 </html>
