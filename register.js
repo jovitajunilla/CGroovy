@@ -8,13 +8,9 @@ function checkValid(){
         let genderValid = genderValidation();
 
     if(nameValid && ageValid && emailValid && passwordValid && rePassValid && genderValid){
-        // let nameValidation = nameValidation();
-        // let name = nameValidation.nameInput;
-         document.getElementById("forms").submit();
-       console.log("success")
-    }else{
-        event.preventDefault();
-        console.log("salah");
+        let nameInput = document.getElementById("nameFld").value;
+        localStorage.setItem("user",nameInput);
+         window.location.href = "home.html";
     }
     }
 
