@@ -1,26 +1,6 @@
-* {
-  margin: 0;
-  padding: 0;
-}
-
 body {
   background-color: #1f1f1f;
-  font-family: "Nexa Thin";
-}
-
-@font-face {
-  font-family: "Nexa Heavy";
-  src: url("font/Nexa\ Heavy.otf");
-}
-
-@font-face {
-  font-family: "Nexa Regular";
-  src: url("font/Nexa\ Regular.otf");
-}
-
-@font-face {
-  font-family: "Nexa Thin";
-  src: url("font/Nexa\ Thin.otf");
+  font-family: 'Nexa Thin';
 }
 
 /* CONTENT -------------------------------------------------------------- */
@@ -30,7 +10,7 @@ body {
 }
 
 #songCollectionTitle {
-  font-family: "Nexa Heavy";
+  font-family: 'Nexa Heavy';
   font-size: 30px;
 }
 
@@ -44,7 +24,7 @@ body {
   width: fit-content;
   gap: 0.5rem;
   h3 {
-    font-family: "Nexa Regular";
+    font-family: 'Nexa Regular';
     align-self: center;
   }
 }
@@ -55,6 +35,7 @@ body {
 
 #image-play {
   width: 30px;
+  height: 30px;
 }
 
 .songCollection {
@@ -73,7 +54,7 @@ body {
 }
 
 .heavy {
-  font-family: "Nexa Heavy";
+  font-family: 'Nexa Heavy';
 }
 
 .black-container {
@@ -113,7 +94,7 @@ body {
 }
 
 .song-title {
-  font-family: "Nexa Heavy";
+  font-family: 'Nexa Heavy';
   font-size: 18px;
 }
 
@@ -130,7 +111,7 @@ body {
 
 .white-bold {
   color: white;
-  font-family: "Nexa Regular";
+  font-family: 'Nexa Regular';
   font-size: 28px;
 }
 
@@ -178,7 +159,7 @@ body {
 }
 
 #play-title {
-  font-family: "Nexa Heavy";
+  font-family: 'Nexa Heavy';
 }
 
 #image-mini {

@@ -5,25 +5,9 @@
 
 body {
   background-color: #1f1f1f;
-  font-family: "Nexa Heavy";
+  font-family: 'Nexa Heavy';
 }
 
-@font-face {
-  font-family: "Nexa Regular";
-  src: url(font/Nexa\ Regular.otf);
-}
-@font-face {
-  font-family: "Nexa Thin";
-  src: url(font/Nexa\ Thin.otf);
-}
-@font-face {
-  font-family: "Nexa Bold";
-  src: url(font/Nexa\ Bold.otf);
-}
-@font-face {
-  font-family: "Nexa Heavy";
-  src: url(font/Nexa\ Heavy.otf);
-}
 
 /* CONTENT -------------------------------------------------------------- */
 
@@ -37,7 +21,7 @@ body {
 }
 
 .nexa-regular {
-  font-family: "Nexa Regular";
+  font-family: 'Nexa Regular';
   font-size: 20px;
 }
 
@@ -121,6 +105,10 @@ body {
   text-align: center;
   justify-content: center;
   margin: 5rem 0;
+
+  img{
+    width: 250px;
+  }
 }
 
 /* --END CONTENT------------------------------------------- */

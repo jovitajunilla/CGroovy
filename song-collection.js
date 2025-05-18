@@ -20,8 +20,6 @@ function displaySong() {
   const durationInfo = document.getElementById("durationInfo");
   durationInfo.innerHTML = ` ${songData.length} song - 1 hour 53 minutes`;
 
-
-
   for (let category in songList) {
     const categoryDiv = document.createElement("section");
     categoryDiv.classList.add("songCollection");
@@ -37,7 +35,7 @@ function displaySong() {
         </div>`;
 
     const listSong = categoryDiv.querySelector(".song-list");
-   
+
     songList[category].forEach((song) => {
       const songDiv = document.createElement("div");
       songDiv.classList.add("song");
@@ -57,26 +55,25 @@ function displaySong() {
 
         //play bar
         play.innerHTML = ` <div id="playbar">
-            <img src="${song.image}" alt="" id="image-mini">
+          <img src="${song.image}" alt="" id="image-mini" />
           <div>
             <p id="play-title">${song.title}</p>
             <p>${song.artist}</p>
           </div>
           <div class="playbar-content">
-          <img src = "img/play-back-icon.png" alt="" class="image-mini3 image-mini">
-          <img src="img/play-icon-2.png" alt="" class="image-mini2 image-mini" id="play-icon">
-          <img src = "img/play-next-icon.png" alt="" class="image-mini3 image-mini">
+            <img src="img/play-back-icon.png" alt="" class="image-mini3 image-mini" id="back-icon"/>
+            <img src="img/play-icon-2.png" alt="" class="image-mini2 image-mini" id="play-icon"/>
+            <img src="img/play-next-icon.png" alt="" class="image-mini3 image-mini" id="next-icon"/>
           </div>
           <a href="song-detail.html">
-          <img src="img/maximize.png" alt="" class="image-mini2 image-mini">
+            <img src="img/maximize.png" alt="" class="image-mini2 image-mini" />
           </a>
           <audio src="${song.audio}" id="song-audio" preload="auto"></audio>
-          </div>
-          
-          <div id="audiobar">
+        </div>
+
+        <div id="audiobar">
           <div id="audioPercentage"></div>
-          </div>
-          `;
+        </div>`;
 
         localStorage.setItem("selectedSong", JSON.stringify(song));
         // window.location.href="song-detail.html";
@@ -106,24 +103,32 @@ function displaySong() {
           playIcon.src = "img/play-icon-2.png";
         });
 
-        songAudio.addEventListener("loadedmetadata",function(){
-          //deklarasi audiobar 
+        //deklarasi audiobar
+        songAudio.addEventListener("loadedmetadata", function () {
           const audioBar = $("#audioPercentage");
           const duration = songAudio.duration;
-  
+
           // buat perubahan warna audio bar
-          songAudio.ontimeupdate = function(){
+          songAudio.ontimeupdate = function () {
             const currentTime = songAudio.currentTime;
-            const progress = (currentTime / duration) * 100; 
-  
+            const progress = (currentTime / duration) * 100;
+
             audioBar.width(progress + "%");
-            
-          }
+          };
         });
 
+        const backIcon = $("#back-icon");
+        const nextIcon = $("#next-icon");
 
+        backIcon.on("click", function () {
+          console.log("Back button clicked");
+        });
 
+        nextIcon.on("click", function () {
+          console.log("next button clicked");
+        });
       });
+
       listSong.appendChild(songDiv);
     });
 

@@ -34,18 +34,15 @@ window.addEventListener("load", function() {
             Year Date: ${song.release} <br />
             Mood: ${song.mood}
             </p>
+          
             <div id="play-timer">
             <div id="buttonPlay">
-            <img
-            src="img/play-icon.png"
-            alt="Play"
-            id="image-play"
-            />
-            <p class="white">Play</p>
+            <img src="img/play-icon.png" alt="Play" id="image-play" />
+            <h3 class="white">Play</h3>
             </div>
             <div id="time">
             <img src="img/time.png" alt="">
-            <p>${durationFormatted}</p>
+            <h3>${durationFormatted}</h3>
             </div>
             </div>
             </div>`;

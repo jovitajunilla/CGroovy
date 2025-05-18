@@ -1,25 +1,3 @@
-@font-face {
-    font-family: 'Nexa Regular';
-    src: url(font/Nexa\ Regular.otf);
-}
-@font-face {
-    font-family: "Nexa Thin";
-    src: url("font/Nexa\ Thin.otf");
-}
-@font-face {
-    font-family: 'Nexa Bold';
-    src: url(font/Nexa\ Bold.otf);
-}
-@font-face {
-    font-family: 'Nexa Heavy';
-    src: url(font/Nexa\ Heavy.otf);
-}
-
-*{
-    padding: 0;
-    margin: 0;
-}
-
 body{
     background-color: #1F1F1F;
     font-family: 'Nexa Regular';

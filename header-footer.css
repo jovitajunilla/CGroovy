@@ -1,4 +1,35 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+    font-family: 'Nexa Regular';
+    src: url(font/Nexa\ Regular.otf);
+}
+@font-face {
+    font-family: "Nexa Thin";
+    src: url("font/Nexa\ Thin.otf");
+}
+@font-face {
+    font-family: 'Nexa Bold';
+    src: url(font/Nexa\ Bold.otf);
+}
+@font-face {
+    font-family: 'Nexa Heavy';
+    src: url(font/Nexa\ Heavy.otf);
+}
+
+
 /* HEADER ------------------------------------------------------------------- */
+
+header{
+  position: sticky;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
 .navbar{
     padding: 0 40px;
     display: flex;
