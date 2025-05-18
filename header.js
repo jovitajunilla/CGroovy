@@ -1,4 +1,4 @@
-window.onload = function(){
+window.addEventListener("load", function() {
     console.log(localStorage.getItem("user"));
     let username = localStorage.getItem("user");
     let usernameSplit = username.split(" ");
@@ -20,4 +20,4 @@ window.onload = function(){
     const menuRight = menuRect.right;
     dropdownMenu.style.right = `${window.innerWidth - menuRight}px`;
 
-}
+});

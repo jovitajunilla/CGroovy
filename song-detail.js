@@ -1,4 +1,5 @@
-window.onload = function () {
+// window.onload = function () {
+window.addEventListener("load", function() {
   const songData = localStorage.getItem("selectedSong");
 
   if (songData) {
@@ -55,4 +56,4 @@ window.onload = function () {
 
     lyrics.innerHTML = `${song.lyrics}`;
   }
-};
+});
