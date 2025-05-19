@@ -5,19 +5,19 @@
 
 @font-face {
   font-family: "Nexa Regular";
-  src: url(font/Nexa\ Regular.otf);
+  src: url(assets/assets/font/Nexa\ Regular.otf);
 }
 @font-face {
   font-family: "Nexa Thin";
-  src: url("font/Nexa\ Thin.otf");
+  src: url(assets/font/Nexa\ Thin.otf);
 }
 @font-face {
   font-family: "Nexa Bold";
-  src: url(font/Nexa\ Bold.otf);
+  src: url(assets/font/Nexa\ Bold.otf);
 }
 @font-face {
   font-family: "Nexa Heavy";
-  src: url(font/Nexa\ Heavy.otf);
+  src: url(assets/font/Nexa\ Heavy.otf);
 }
 
 /* HEADER ------------------------------------------------------------------- */
@@ -122,7 +122,7 @@ a {
   padding: 1rem 0;
   border-radius: 6px;
   top: 70px;
-  width: 200px;
+  width: 210px;
 }
 
 .dropdown-menu:hover {

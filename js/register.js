@@ -16,7 +16,7 @@ function checkValid() {
   ) {
     let nameInput = document.getElementById("nameFld").value;
     localStorage.setItem("user", nameInput);
-    window.location.href = "home.html";
+    window.location.href = "../pages/home.html";
   }
 }
 

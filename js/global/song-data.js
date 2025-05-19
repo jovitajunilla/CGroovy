@@ -1,13 +1,13 @@
 export const songData = [{
         // 1-------------------------------------------------------------
         category: "Pop",
-        image: "img/song/Backstreet Boys - I Want It That Way.jpg",
+        image: "../assets/img/song/Backstreet Boys - I Want It That Way.jpg",
         title: "I Want It That Way",
         artist: "Backstreet Boys",
         desc: "A catchy pop ballad about longing and unrequited love, expressing a desire to be together despite the obstacles.",
         release: "1999",
         mood: "Romance",
-        audio: "audio/Backstreet Boys - I Want It That Way.mp3",
+        audio: "../assets/audio/Backstreet Boys - I Want It That Way.mp3",
         lyrics: `Yeah
 
                 You are my fire
@@ -74,13 +74,13 @@ export const songData = [{
 }, {
         // 2-------------------------------------------------------------
         category: "Pop",
-        image: "img/song/Billie Eilish - What Was I Made For.jpeg",
+        image: "../assets/img/song/Billie Eilish - What Was I Made For.jpeg",
         title: "What Was I Made For",
         artist: "Billie Eilish",
         desc: "A reflective and emotional song about searching for purpose and understanding one’s identity, exploring feelings of uncertainty and longing.",
         release: "2023",
         mood: "Sad",
-        audio: "audio/Billie Eilish - What Was I Made For.mp3",
+        audio: "../assets/audio/Billie Eilish - What Was I Made For.mp3",
         lyrics: `I used to float
                 Now I just fall down
                 I used to know
@@ -126,13 +126,13 @@ export const songData = [{
 }, {
         // 3-------------------------------------------------------------
         category: "Pop",
-        image: "img/song/Bruno Mars - Grenade-TalkingToTheMoon.png",
+        image: "../assets/img/song/Bruno Mars - Grenade-TalkingToTheMoon.png",
         title: "Grenade",
         artist: "Bruno Mars",
         desc: "Powerful pop song about sacrifice and heartbreak in love.",
         release: "2010",
         mood: "Heartbreak",
-        audio: "audio/Bruno Mars - Grenade.mp3",
+        audio: "../assets/audio/Bruno Mars - Grenade.mp3",
         lyrics: `Easy come, easy go, that's just how you live
                     Oh, take, take, take it all, but you never give
                     Should've known you was trouble from the first kiss
@@ -196,13 +196,13 @@ export const songData = [{
 }, {
         // 4-------------------------------------------------------------
         category: "Pop",
-        image: "img/song/Bruno Mars - Grenade-TalkingToTheMoon.png",
+        image: "../assets/img/song/Bruno Mars - Grenade-TalkingToTheMoon.png",
         title: "Talking To The Moon",
         artist: "Bruno Mars",
         desc: "Melancholic ballad about longing and loneliness when separated from a loved one.",
         release: "2010",
         mood: "Romance",
-        audio: "audio/Bruno Mars - Talking To The Moon.mp3",
+        audio: "../assets/audio/Bruno Mars - Talking To The Moon.mp3",
         lyrics: `I know you're somewhere out there, somewhere far away
                 I want you back, I want you back
                 My neighbors think I'm crazy, but they don't understand
@@ -248,13 +248,13 @@ export const songData = [{
 }, {
         // 5-------------------------------------------------------------
         category: "Pop",
-        image: "img/song/Bruno Mars - Versace on the Floor.jpg",
+        image: "../assets/img/song/Bruno Mars - Versace on the Floor.jpg",
         title: "Versace on the Floor",
         artist: "Bruno Mars",
         desc: "Smooth romantic song with sensual vibes and lyrics about intimacy and love.",
         release: "2017",
         mood: "Romance",
-        audio: "audio/Bruno Mars - Versace on the Floor.mp3",
+        audio: "../assets/audio/Bruno Mars - Versace on the Floor.mp3",
         lyrics: `Let's take our time tonight, girl
                 Above us all the stars are watchin'
                 There's no place I'd rather be in this world
@@ -321,13 +321,13 @@ export const songData = [{
 }, {
         // 6-------------------------------------------------------------
         category: "Pop",
-        image: "img/song/One Direction - Midnight Memories.jpeg",
+        image: "../assets/img/song/One Direction - Midnight Memories.jpeg",
         title: "Midnight Memories",
         artist: "One Direction",
         desc: "Energetic pop-rock track about youthful freedom and unforgettable nights.",
         release: "2014",
         mood: "Party",
-        audio: "audio/One Direction - Midnight Memories.mp3",
+        audio: "../assets/audio/One Direction - Midnight Memories.mp3",
         lyrics: `One, two, three
 
                 Straight off the plane to a new hotel
@@ -387,13 +387,13 @@ export const songData = [{
 }, {
         // 7-------------------------------------------------------------
         category: "R&B",
-        image: "img/song/Juicy Luicy - Tanpa Tergesa.jpg",
+        image: "../assets/img/song/Juicy Luicy - Tanpa Tergesa.jpg",
         title: "Tanpa Tergesa",
         artist: "Juicy Luicy",
         desc: "A heartfelt pop song by Juicy Luicy about embracing life's moments without rushing, focusing on living in the present and cherishing love.",
         release: "2018",
         mood: "Calm",
-        audio: "audio/Juicy Luicy - Tanpa Tergesa.mp3",
+        audio: "../assets/audio/Juicy Luicy - Tanpa Tergesa.mp3",
         lyrics: `Jaga dulu jarak kita
                 Jika tak ingin akhirnya
                 Kau menangis lagi
@@ -438,13 +438,13 @@ export const songData = [{
         // 8-------------------------------------------------------------
 
         category: "R&B",
-        image: "img/song/Tenxi, Naykilla & Jemsii - Garam & Madu (Sakit Dadaku).jpg",
+        image: "../assets/img/song/Tenxi, Naykilla & Jemsii - Garam & Madu (Sakit Dadaku).jpg",
         title: "Garam & Madu (Sakit Dadaku)",
         artist: "Tenxi, Naykilla & Jemsii",
         desc: "Emotional R&B collaboration blending heartfelt vocals and soulful beats.",
         release: "2024",
         mood: "Party",
-        audio: "audio/Tenxi, Naykilla & Jemsii - Garam & Madu (Sakit Dadaku).mp3",
+        audio: "../assets/audio/Tenxi, Naykilla & Jemsii - Garam & Madu (Sakit Dadaku).mp3",
         lyrics: `Tanpa ku sadar, ku mulai bertanya
                 Jika terulang, akankah sama?
 
@@ -498,13 +498,13 @@ export const songData = [{
 }, {
         // 9-------------------------------------------------------------
         category: "R&B",
-        image: "img/song/The Groove - Kuingin.jpeg",
+        image: "../assets/img/song/The Groove - Kuingin.jpeg",
         title: "Kuingin",
         artist: "The Groove",
         desc: "Soulful R&B track with emotional depth and smooth instrumentation.",
         release: "1999",
         mood: "Energetic",
-        audio: "audio/The Groove - Kuingin.mp3",
+        audio: "../assets/audio/The Groove - Kuingin.mp3",
         lyrics: `Kucoba sampaikan semua ini
                 Sampaikan pada dirimu
                 Telah lama kusimpan di hati
@@ -560,13 +560,13 @@ export const songData = [{
 }, {
         // 10-------------------------------------------------------------
         category: "K-Pop",
-        image: "img/song/Black Pink - Boombayah.jpeg",
+        image: "../assets/img/song/Black Pink - Boombayah.jpeg",
         title: "Boombayah",
         artist: "Blackpink",
         desc: "Boombayah is a high-energy song by Blackpink that celebrates confidence, freedom, and self-expression.",
         release: "2016",
         mood: "Energetic",
-        audio: "audio/Black Pink - Boombayah.mp3",
+        audio: "../assets/audio/Black Pink - Boombayah.mp3",
         lyrics: `BLACKPINK in your area
         BLACKPINK in your area
 
@@ -664,13 +664,13 @@ export const songData = [{
 }, {
         // 10-------------------------------------------------------------
         category: "K-Pop",
-        image: "img/song/BTS - Butter.jpeg",
+        image: "../assets/img/song/BTS - Butter.jpeg",
         title: "Butter",
         artist: "BTS",
         desc: "A catchy, upbeat pop track released in 2021, featuring smooth, feel-good vibes and confident lyrics about love and attraction, with a retro, disco-inspired sound that highlights the group's charisma and charm.",
         release: "2021",
         mood: "Energetic",
-        audio: "audio/BTS - Butter.mp3",
+        audio: "../assets/audio/BTS - Butter.mp3",
         lyrics: `Smooth like butter
         Like a criminal undercover
         Gon' pop like trouble

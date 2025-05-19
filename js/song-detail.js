@@ -37,11 +37,11 @@ window.addEventListener("load", function () {
           
             <div id="play-timer">
             <div id="buttonPlay">
-            <img src="img/play-icon.png" alt="Play" id="image-play" />
+            <img src="../assets/img/play-icon.png" alt="Play" id="image-play" />
             <h3 class="white">Play</h3>
             </div>
             <div id="time">
-            <img src="img/time.png" alt="">
+            <img src="../assets/img/time.png" alt="">
             <h3>${durationFormatted}</h3>
             </div>
             </div>

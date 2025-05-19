@@ -1,4 +1,4 @@
-import { songData } from "./song-data.js";
+import { songData } from "../js/global/song-data.js";
 
 displaySong();
 
@@ -72,12 +72,12 @@ function playSong(song) {
             <p>${song.artist}</p>
           </div>
           <div class="playbar-content">
-            <img src="img/play-back-icon.png" alt="" class="image-mini3 image-mini" id="back-icon"/>
-            <img src="img/play-icon-2.png" alt="" class="image-mini2 image-mini" id="play-icon"/>
-            <img src="img/play-next-icon.png" alt="" class="image-mini3 image-mini" id="next-icon"/>
+            <img src="../assets/img/play-back-icon.png" alt="" class="image-mini3 image-mini" id="back-icon"/>
+            <img src="../assets/img/play-icon-2.png" alt="" class="image-mini2 image-mini" id="play-icon"/>
+            <img src="../assets/img/play-next-icon.png" alt="" class="image-mini3 image-mini" id="next-icon"/>
           </div>
           <a href="song-detail.html">
-            <img src="img/maximize.png" alt="" class="image-mini2 image-mini" />
+            <img src="../assets/img/maximize.png" alt="" class="image-mini2 image-mini" />
           </a>
           <audio src="${song.audio}" id="song-audio" preload="auto"></audio>
         </div>
@@ -97,22 +97,22 @@ function playSong(song) {
   songAudio.play();
 
   //deklarasi pas lagu diputer di awal tekan jadi icon pause
-  playIcon.src = "img/pause-icon.png";
+  playIcon.src = "../assets/img/pause-icon.png";
 
   // ubah icon pause dan play
   playIcon.addEventListener("click", function () {
     if (songAudio.paused) {
       songAudio.play();
-      playIcon.src = "img/pause-icon.png";
+      playIcon.src = "../assets/img/pause-icon.png";
     } else {
       songAudio.pause();
-      playIcon.src = "img/play-icon-2.png";
+      playIcon.src = "../assets/img/play-icon-2.png";
     }
   });
 
   // ubah icon jadi play kalau uda selesai
   songAudio.addEventListener("ended", function () {
-    playIcon.src = "img/play-icon-2.png";
+    playIcon.src = "../assets/img/play-icon-2.png";
 
     const index = songData.indexOf(song);
     const nextIndex = (index + 1) % songData.length;

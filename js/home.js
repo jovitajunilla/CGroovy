@@ -1,4 +1,4 @@
-import { songData } from "./song-data.js";
+import { songData } from "../js/global/song-data.js";
 
 displaySong();
 displaySongRecommendation();
