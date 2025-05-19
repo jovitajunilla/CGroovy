@@ -47,9 +47,22 @@ function displaySong() {
             <p class="song-desc">${song.desc}</p>
             <p class="song-release">Year Date: ${song.release}</p>
             <p class="song-mood">Mood: ${song.mood}</p>`;
+            
+            
+            listSong.appendChild(songDiv);
 
-      songDiv.addEventListener("click", function () {
-        console.log(song);
+            songDiv.addEventListener("click", function () {
+              playSong(song);
+            });
+            
+          });
+          
+          songBox.appendChild(categoryDiv);
+  }
+}
+
+function playSong(song){
+        // console.log(song);
         const play = document.getElementById("play");
         play.style.display = "flex";
 
@@ -75,6 +88,7 @@ function displaySong() {
           <div id="audioPercentage"></div>
         </div>`;
 
+    // kalau mau simpen ke localStorage harus distringify dlu JSON nya
         localStorage.setItem("selectedSong", JSON.stringify(song));
         // window.location.href="song-detail.html";
 
@@ -120,18 +134,75 @@ function displaySong() {
         const backIcon = $("#back-icon");
         const nextIcon = $("#next-icon");
 
+        
+        if (localStorage.getItem("previousSong") === null) {
+          localStorage.setItem("previousSong", null);
+        }
+
+        if (localStorage.getItem("nextSong") === null) {
+          // Similarly, initialize nextSong with null or your default value
+          localStorage.setItem("nextSong", null);
+        }
+
+
+
         backIcon.on("click", function () {
-          console.log("Back button clicked");
+          playBackIcon(song);
         });
 
         nextIcon.on("click", function () {
-          console.log("next button clicked");
+          playNextIcon(song);
         });
-      });
 
-      listSong.appendChild(songDiv);
-    });
+}
 
-    songBox.appendChild(categoryDiv);
+function playBackIcon(song){
+
+  localStorage.setItem("nextSong",JSON.stringify(song));
+
+  const savePreviousLocalStorage = localStorage.getItem("previousSong");
+  const savePrevious = JSON.parse(savePreviousLocalStorage);
+
+  if(!savePrevious){
+
+    let randomIndex;
+    do{
+      randomIndex = Math.floor(Math.random()*songData.length); 
+      // I spent 10 minutes trying to figure out why I couldn't get the index, 
+      // only to realize I had forgotten to add parentheses after Math.random -jopita 19/05/2025 08.03
+    }while(randomIndex===songData.indexOf(song));
+  
+    const randomSong = songData[randomIndex];
+
+    playSong(randomSong);
+  }else{
+    playSong(savePrevious);
+    localStorage.removeItem("previousSong");
+  }
+
+};
+
+function playNextIcon(song){
+
+   localStorage.setItem("previousSong",JSON.stringify(song));
+
+   const nextSongLocalStorage = localStorage.getItem("nextSong");
+   const nextSong = JSON.parse(nextSongLocalStorage);
+
+  if(!nextSong){
+    
+    let randomIndex;
+    do{
+      randomIndex = Math.floor(Math.random()*songData.length); 
+      // I spent 10 minutes trying to figure out why I couldn't get the index, 
+      // only to realize I had forgotten to add parentheses after Math.random -jopita 19/05/2025 08.03
+    }while(randomIndex===songData.indexOf(song));
+  
+    const randomSong = songData[randomIndex];
+
+    playSong(randomSong);
+  }else{
+    playSong(nextSong);
+     localStorage.removeItem("nextSong");
   }
 }

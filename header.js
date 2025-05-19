@@ -1,12 +1,12 @@
 window.addEventListener("load", function() {
-    console.log(localStorage.getItem("user"));
+    // console.log(localStorage.getItem("user"));
     let username = localStorage.getItem("user");
     let usernameSplit = username.split(" ");
     
     let container = document.getElementById("username");
     if(username){
         container.innerHTML = usernameSplit[0];
-        console.log(container.innerHTML);
+        // console.log(container.innerHTML);
     }else{
         container.innerHTML = "User";
     }
