@@ -61,7 +61,7 @@ function displaySong() {
   }
 }
 
-function playSong(song){
+function playSong(song){ 
         // console.log(song);
         const play = document.getElementById("play");
         play.style.display = "flex";
@@ -112,9 +112,24 @@ function playSong(song){
           }
         });
 
+        
         // ubah icon jadi play kalau uda selesai
         songAudio.addEventListener("ended", function () {
           playIcon.src = "img/play-icon-2.png";
+
+          const index = songData.indexOf(song);
+          const nextIndex = (index+1)%songData.length;
+          const songNextIndex = songData[nextIndex];
+          console.log(`${songNextIndex.title}`)
+
+          localStorage.setItem("previousSong",JSON.stringify(song));
+          localStorage.setItem("selectedSong",JSON.stringify(songNextIndex));
+          localStorage.setItem("nextSong",null);
+
+        const songLocalStorage = localStorage.getItem("selectedSong");
+        const nextSong = JSON.parse(songLocalStorage);
+
+          setTimeout(function(){playSong(nextSong)},1000);
         });
 
         //deklarasi audiobar
