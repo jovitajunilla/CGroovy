@@ -47,27 +47,25 @@ function displaySong() {
             <p class="song-desc">${song.desc}</p>
             <p class="song-release">Year Date: ${song.release}</p>
             <p class="song-mood">Mood: ${song.mood}</p>`;
-            
-            
-            listSong.appendChild(songDiv);
 
-            songDiv.addEventListener("click", function () {
-              playSong(song);
-            });
-            
-          });
-          
-          songBox.appendChild(categoryDiv);
+      listSong.appendChild(songDiv);
+
+      songDiv.addEventListener("click", function () {
+        playSong(song);
+      });
+    });
+
+    songBox.appendChild(categoryDiv);
   }
 }
 
-function playSong(song){ 
-        // console.log(song);
-        const play = document.getElementById("play");
-        play.style.display = "flex";
+function playSong(song) {
+  // console.log(song);
+  const play = document.getElementById("play");
+  play.style.display = "flex";
 
-        //play bar
-        play.innerHTML = ` <div id="playbar">
+  //play bar
+  play.innerHTML = ` <div id="playbar">
           <img src="${song.image}" alt="" id="image-mini" />
           <div>
             <p id="play-title">${song.title}</p>
@@ -88,136 +86,128 @@ function playSong(song){
           <div id="audioPercentage"></div>
         </div>`;
 
-    // kalau mau simpen ke localStorage harus distringify dlu JSON nya
-        localStorage.setItem("selectedSong", JSON.stringify(song));
-        // window.location.href="song-detail.html";
+  // kalau mau simpen ke localStorage harus distringify dlu JSON nya
+  localStorage.setItem("selectedSong", JSON.stringify(song));
+  // window.location.href="song-detail.html";
 
-        const playIcon = document.getElementById("play-icon");
-        const songAudio = document.getElementById("song-audio");
+  const playIcon = document.getElementById("play-icon");
+  const songAudio = document.getElementById("song-audio");
 
-        //autoplay
-        songAudio.play();
+  //autoplay
+  songAudio.play();
 
-        //deklarasi pas lagu diputer di awal tekan jadi icon pause
-        playIcon.src = "img/pause-icon.png";
+  //deklarasi pas lagu diputer di awal tekan jadi icon pause
+  playIcon.src = "img/pause-icon.png";
 
-        // ubah icon pause dan play
-        playIcon.addEventListener("click", function () {
-          if (songAudio.paused) {
-            songAudio.play();
-            playIcon.src = "img/pause-icon.png";
-          } else {
-            songAudio.pause();
-            playIcon.src = "img/play-icon-2.png";
-          }
-        });
+  // ubah icon pause dan play
+  playIcon.addEventListener("click", function () {
+    if (songAudio.paused) {
+      songAudio.play();
+      playIcon.src = "img/pause-icon.png";
+    } else {
+      songAudio.pause();
+      playIcon.src = "img/play-icon-2.png";
+    }
+  });
 
-        
-        // ubah icon jadi play kalau uda selesai
-        songAudio.addEventListener("ended", function () {
-          playIcon.src = "img/play-icon-2.png";
+  // ubah icon jadi play kalau uda selesai
+  songAudio.addEventListener("ended", function () {
+    playIcon.src = "img/play-icon-2.png";
 
-          const index = songData.indexOf(song);
-          const nextIndex = (index+1)%songData.length;
-          const songNextIndex = songData[nextIndex];
-          console.log(`${songNextIndex.title}`)
+    const index = songData.indexOf(song);
+    const nextIndex = (index + 1) % songData.length;
+    const songNextIndex = songData[nextIndex];
+    console.log(`${songNextIndex.title}`);
 
-          localStorage.setItem("previousSong",JSON.stringify(song));
-          localStorage.setItem("selectedSong",JSON.stringify(songNextIndex));
-          localStorage.setItem("nextSong",null);
+    localStorage.setItem("previousSong", JSON.stringify(song));
+    localStorage.setItem("selectedSong", JSON.stringify(songNextIndex));
+    localStorage.setItem("nextSong", null);
 
-        const songLocalStorage = localStorage.getItem("selectedSong");
-        const nextSong = JSON.parse(songLocalStorage);
+    const songLocalStorage = localStorage.getItem("selectedSong");
+    const nextSong = JSON.parse(songLocalStorage);
 
-          setTimeout(function(){playSong(nextSong)},1000);
-        });
+    setTimeout(function () {
+      playSong(nextSong);
+    }, 1000);
+  });
 
-        //deklarasi audiobar
-        songAudio.addEventListener("loadedmetadata", function () {
-          const audioBar = $("#audioPercentage");
-          const duration = songAudio.duration;
+  //deklarasi audiobar
+  songAudio.addEventListener("loadedmetadata", function () {
+    const audioBar = $("#audioPercentage");
+    const duration = songAudio.duration;
 
-          // buat perubahan warna audio bar
-          songAudio.ontimeupdate = function () {
-            const currentTime = songAudio.currentTime;
-            const progress = (currentTime / duration) * 100;
+    // buat perubahan warna audio bar
+    songAudio.ontimeupdate = function () {
+      const currentTime = songAudio.currentTime;
+      const progress = (currentTime / duration) * 100;
 
-            audioBar.width(progress + "%");
-          };
-        });
+      audioBar.width(progress + "%");
+    };
+  });
 
-        const backIcon = $("#back-icon");
-        const nextIcon = $("#next-icon");
+  const backIcon = $("#back-icon");
+  const nextIcon = $("#next-icon");
 
-        
-        if (localStorage.getItem("previousSong") === null) {
-          localStorage.setItem("previousSong", null);
-        }
+  if (localStorage.getItem("previousSong") === null) {
+    localStorage.setItem("previousSong", null);
+  }
 
-        if (localStorage.getItem("nextSong") === null) {
-          // Similarly, initialize nextSong with null or your default value
-          localStorage.setItem("nextSong", null);
-        }
+  if (localStorage.getItem("nextSong") === null) {
+    // Similarly, initialize nextSong with null or your default value
+    localStorage.setItem("nextSong", null);
+  }
 
+  backIcon.on("click", function () {
+    playBackIcon(song);
+  });
 
-
-        backIcon.on("click", function () {
-          playBackIcon(song);
-        });
-
-        nextIcon.on("click", function () {
-          playNextIcon(song);
-        });
-
+  nextIcon.on("click", function () {
+    playNextIcon(song);
+  });
 }
 
-function playBackIcon(song){
-
-  localStorage.setItem("nextSong",JSON.stringify(song));
+function playBackIcon(song) {
+  localStorage.setItem("nextSong", JSON.stringify(song));
 
   const savePreviousLocalStorage = localStorage.getItem("previousSong");
   const savePrevious = JSON.parse(savePreviousLocalStorage);
 
-  if(!savePrevious){
-
+  if (!savePrevious) {
     let randomIndex;
-    do{
-      randomIndex = Math.floor(Math.random()*songData.length); 
-      // I spent 10 minutes trying to figure out why I couldn't get the index, 
+    do {
+      randomIndex = Math.floor(Math.random() * songData.length);
+      // I spent 10 minutes trying to figure out why I couldn't get the index,
       // only to realize I had forgotten to add parentheses after Math.random -jopita 19/05/2025 08.03
-    }while(randomIndex===songData.indexOf(song));
-  
+    } while (randomIndex === songData.indexOf(song));
+
     const randomSong = songData[randomIndex];
 
     playSong(randomSong);
-  }else{
+  } else {
     playSong(savePrevious);
     localStorage.removeItem("previousSong");
   }
+}
 
-};
+function playNextIcon(song) {
+  localStorage.setItem("previousSong", JSON.stringify(song));
 
-function playNextIcon(song){
+  const nextSongLocalStorage = localStorage.getItem("nextSong");
+  const nextSong = JSON.parse(nextSongLocalStorage);
 
-   localStorage.setItem("previousSong",JSON.stringify(song));
-
-   const nextSongLocalStorage = localStorage.getItem("nextSong");
-   const nextSong = JSON.parse(nextSongLocalStorage);
-
-  if(!nextSong){
-    
+  if (!nextSong) {
     let randomIndex;
-    do{
-      randomIndex = Math.floor(Math.random()*songData.length); 
-      // I spent 10 minutes trying to figure out why I couldn't get the index, 
+    do {
+      randomIndex = Math.floor(Math.random() * songData.length);
+      // I spent 10 minutes trying to figure out why I couldn't get the index,
       // only to realize I had forgotten to add parentheses after Math.random -jopita 19/05/2025 08.03
-    }while(randomIndex===songData.indexOf(song));
-  
+    } while (randomIndex === songData.indexOf(song));
+
     const randomSong = songData[randomIndex];
 
     playSong(randomSong);
-  }else{
+  } else {
     playSong(nextSong);
-     localStorage.removeItem("nextSong");
+    localStorage.removeItem("nextSong");
   }
 }

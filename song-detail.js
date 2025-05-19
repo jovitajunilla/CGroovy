@@ -1,5 +1,5 @@
 // window.onload = function () {
-window.addEventListener("load", function() {
+window.addEventListener("load", function () {
   const songData = localStorage.getItem("selectedSong");
 
   if (songData) {
@@ -10,7 +10,7 @@ window.addEventListener("load", function() {
     const audio = new Audio(song.audio);
 
     const backgroundBox = document.getElementById("background-blur");
-            backgroundBox.style.backgroundImage = `url("${song.image}")`;
+    backgroundBox.style.backgroundImage = `url("${song.image}")`;
 
     audio.onloadedmetadata = function () {
       const duration = audio.duration;
@@ -47,7 +47,6 @@ window.addEventListener("load", function() {
             </div>
             </div>`;
     };
-
 
     const lyrics = document.getElementById("lyrics");
 

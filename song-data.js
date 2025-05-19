@@ -3,12 +3,12 @@ export const songData = [{
         category: "Pop",
         image: "img/song/Backstreet Boys - I Want It That Way.jpg",
         title: "I Want It That Way",
-        artist:"Backstreet Boys",
+        artist: "Backstreet Boys",
         desc: "A catchy pop ballad about longing and unrequited love, expressing a desire to be together despite the obstacles.",
-        release:"1999",
-        mood:"Romance",
-        audio:"audio/Backstreet Boys - I Want It That Way.mp3",
-        lyrics:`Yeah
+        release: "1999",
+        mood: "Romance",
+        audio: "audio/Backstreet Boys - I Want It That Way.mp3",
+        lyrics: `Yeah
 
                 You are my fire
                 The one desire
@@ -71,17 +71,17 @@ export const songData = [{
                 I never wanna hear you say (never wanna hear you say, yeah)
                 I want it that way
                 'Cause I want it that way`,
-    },{
-          // 2-------------------------------------------------------------
+}, {
+        // 2-------------------------------------------------------------
         category: "Pop",
         image: "img/song/Billie Eilish - What Was I Made For.jpeg",
         title: "What Was I Made For",
-        artist:"Billie Eilish",
+        artist: "Billie Eilish",
         desc: "A reflective and emotional song about searching for purpose and understanding one’s identity, exploring feelings of uncertainty and longing.",
-        release:"2023",
-        mood:"Sad",
-        audio:"audio/Billie Eilish - What Was I Made For.mp3",
-        lyrics:`I used to float
+        release: "2023",
+        mood: "Sad",
+        audio: "audio/Billie Eilish - What Was I Made For.mp3",
+        lyrics: `I used to float
                 Now I just fall down
                 I used to know
                 But I'm not sure now
@@ -123,17 +123,17 @@ export const songData = [{
                 Something I wait for
                 Something I'm made for
                 Something I'm made for`
-    }, {
-          // 3-------------------------------------------------------------
-            category: "Pop", 
-            image: "img/song/Bruno Mars - Grenade-TalkingToTheMoon.png",
-            title: "Grenade",
-            artist: "Bruno Mars",
-            desc: "Powerful pop song about sacrifice and heartbreak in love.",
-            release: "2010",
-            mood: "Heartbreak",
-            audio: "audio/Bruno Mars - Grenade.mp3",
-            lyrics:`Easy come, easy go, that's just how you live
+}, {
+        // 3-------------------------------------------------------------
+        category: "Pop",
+        image: "img/song/Bruno Mars - Grenade-TalkingToTheMoon.png",
+        title: "Grenade",
+        artist: "Bruno Mars",
+        desc: "Powerful pop song about sacrifice and heartbreak in love.",
+        release: "2010",
+        mood: "Heartbreak",
+        audio: "audio/Bruno Mars - Grenade.mp3",
+        lyrics: `Easy come, easy go, that's just how you live
                     Oh, take, take, take it all, but you never give
                     Should've known you was trouble from the first kiss
                     Had your eyes wide open, why were they open?
@@ -193,9 +193,9 @@ export const songData = [{
                     You wouldn't do the same
                     Ooh, you'll never do the same
                     No, no, no, no`
-    }, {
-         // 4-------------------------------------------------------------
-         category: "Pop",
+}, {
+        // 4-------------------------------------------------------------
+        category: "Pop",
         image: "img/song/Bruno Mars - Grenade-TalkingToTheMoon.png",
         title: "Talking To The Moon",
         artist: "Bruno Mars",
@@ -245,7 +245,7 @@ export const songData = [{
                 Oh
 
                 I know you're somewhere out there, somewhere far away`
-    }, {
+}, {
         // 5-------------------------------------------------------------
         category: "Pop",
         image: "img/song/Bruno Mars - Versace on the Floor.jpg",
@@ -255,7 +255,7 @@ export const songData = [{
         release: "2017",
         mood: "Romance",
         audio: "audio/Bruno Mars - Versace on the Floor.mp3",
-        lyrics:`Let's take our time tonight, girl
+        lyrics: `Let's take our time tonight, girl
                 Above us all the stars are watchin'
                 There's no place I'd rather be in this world
                 Your eyes are where I'm lost in
@@ -318,7 +318,7 @@ export const songData = [{
                 Versace on the floor
                 Floor
                 Floor`
-    }, {
+}, {
         // 6-------------------------------------------------------------
         category: "Pop",
         image: "img/song/One Direction - Midnight Memories.jpeg",
@@ -384,17 +384,17 @@ export const songData = [{
                 Oh-oh-oh-oh-oh
                 Anywhere we go, never say no
                 Just do it, do it, (yeah) do it, do it`
-    },{
-         // 7-------------------------------------------------------------
-         category: "R&B",
-         image: "img/song/Juicy Luicy - Tanpa Tergesa.jpg",
+}, {
+        // 7-------------------------------------------------------------
+        category: "R&B",
+        image: "img/song/Juicy Luicy - Tanpa Tergesa.jpg",
         title: "Tanpa Tergesa",
-        artist:"Juicy Luicy",
+        artist: "Juicy Luicy",
         desc: "A heartfelt pop song by Juicy Luicy about embracing life's moments without rushing, focusing on living in the present and cherishing love.",
-        release:"2018",
-        mood:"Calm",
-        audio:"audio/Juicy Luicy - Tanpa Tergesa.mp3",
-        lyrics:`Jaga dulu jarak kita
+        release: "2018",
+        mood: "Calm",
+        audio: "audio/Juicy Luicy - Tanpa Tergesa.mp3",
+        lyrics: `Jaga dulu jarak kita
                 Jika tak ingin akhirnya
                 Kau menangis lagi
                 Jangan terlalu kau dekat
@@ -433,10 +433,10 @@ export const songData = [{
                 Ku ingin kita jalani cinta (ku ingin kita)
                 Ku ingin kita jalani cinta
                 Tanpa tergesa
-                Tanpa tergesa` 
-    }, {
-         // 8-------------------------------------------------------------
-        
+                Tanpa tergesa`
+}, {
+        // 8-------------------------------------------------------------
+
         category: "R&B",
         image: "img/song/Tenxi, Naykilla & Jemsii - Garam & Madu (Sakit Dadaku).jpg",
         title: "Garam & Madu (Sakit Dadaku)",
@@ -445,7 +445,7 @@ export const songData = [{
         release: "2024",
         mood: "Party",
         audio: "audio/Tenxi, Naykilla & Jemsii - Garam & Madu (Sakit Dadaku).mp3",
-        lyrics:`Tanpa ku sadar, ku mulai bertanya
+        lyrics: `Tanpa ku sadar, ku mulai bertanya
                 Jika terulang, akankah sama?
 
                 Merah bibir kamu, kau pun lirik aku
@@ -495,17 +495,17 @@ export const songData = [{
                 Yang kaumau cuma aku
                 Yang kumau cuma kamu
                 Yang kaumau cuma aku`
-    }, {
-         // 9-------------------------------------------------------------
-         category: "R&B",
-         image: "img/song/The Groove - Kuingin.jpeg",
+}, {
+        // 9-------------------------------------------------------------
+        category: "R&B",
+        image: "img/song/The Groove - Kuingin.jpeg",
         title: "Kuingin",
         artist: "The Groove",
         desc: "Soulful R&B track with emotional depth and smooth instrumentation.",
         release: "1999",
         mood: "Energetic",
         audio: "audio/The Groove - Kuingin.mp3",
-        lyrics:`Kucoba sampaikan semua ini
+        lyrics: `Kucoba sampaikan semua ini
                 Sampaikan pada dirimu
                 Telah lama kusimpan di hati
                 Yang selalu membuat dirimu ragu, kasih
@@ -557,9 +557,9 @@ export const songData = [{
                 Ku ingin kau ada, ku ingin kau tahu
                 Mengertilah, oh, kasih
                 Dan cobalah untuk mengerti`
-    },{
+}, {
         // 10-------------------------------------------------------------
-        category:"K-Pop",
+        category: "K-Pop",
         image: "img/song/Black Pink - Boombayah.jpeg",
         title: "Boombayah",
         artist: "Blackpink",
@@ -567,7 +567,7 @@ export const songData = [{
         release: "2016",
         mood: "Energetic",
         audio: "audio/Black Pink - Boombayah.mp3",
-        lyrics:`BLACKPINK in your area
+        lyrics: `BLACKPINK in your area
         BLACKPINK in your area
 
         Been a bad girl, I know I am
@@ -661,9 +661,9 @@ export const songData = [{
         Haneuleul neomeoseo olla gal geoya
         Kkeuteul moreuge ppalli dalligo sipeo
         Let's go, let's go`
-    },{
+}, {
         // 10-------------------------------------------------------------
-        category:"K-Pop",
+        category: "K-Pop",
         image: "img/song/BTS - Butter.jpeg",
         title: "Butter",
         artist: "BTS",
@@ -671,7 +671,7 @@ export const songData = [{
         release: "2021",
         mood: "Energetic",
         audio: "audio/BTS - Butter.mp3",
-        lyrics:`Smooth like butter
+        lyrics: `Smooth like butter
         Like a criminal undercover
         Gon' pop like trouble
         Breakin' into your heart like that (Ooh)
@@ -743,4 +743,4 @@ export const songData = [{
         Hotter? Sweeter! Cooler? Butter!
 
         Get it, let it roll`
-    }];
+}];

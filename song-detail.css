@@ -1,6 +1,6 @@
-body{
-  font-family: 'Nexa Regular';
-   color: white;
+body {
+  font-family: "Nexa Regular";
+  color: white;
 }
 
 /* CONTENT -------------------------------------------------------------- */
@@ -50,14 +50,14 @@ body{
 }
 
 .song-singer {
-  font-family: 'Nexa Thin';
+  font-family: "Nexa Thin";
   color: #c4c4c4;
   font-size: 30px;
 }
 
 .song-desc {
   color: #c4c4c4;
-   font-family: 'Nexa Thin';
+  font-family: "Nexa Thin";
 }
 
 .img-song {
@@ -78,7 +78,7 @@ body{
   width: fit-content;
   gap: 0.5rem;
   h3 {
-    font-family: 'Nexa Regular';
+    font-family: "Nexa Regular";
     align-self: center;
   }
 }
@@ -98,7 +98,7 @@ body{
   gap: 0.5rem;
   align-items: center;
 
-  img{
+  img {
     width: 30px;
     height: 30px;
   }
@@ -115,7 +115,7 @@ body{
 }
 
 #lyrics-container {
-  background-color: #2B2B2B;
+  background-color: #2b2b2b;
   height: 100%;
   padding: 5rem;
   gap: 20px;

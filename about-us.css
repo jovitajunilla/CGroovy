@@ -5,9 +5,8 @@
 
 body {
   background-color: #1f1f1f;
-  font-family: 'Nexa Heavy';
+  font-family: "Nexa Heavy";
 }
-
 
 /* CONTENT -------------------------------------------------------------- */
 
@@ -21,7 +20,7 @@ body {
 }
 
 .nexa-regular {
-  font-family: 'Nexa Regular';
+  font-family: "Nexa Regular";
   font-size: 20px;
 }
 
@@ -37,20 +36,18 @@ body {
   display: flex;
   /* flex-wrap: wrap; */
   margin: 5rem 2rem 2rem 2rem;
-  padding:2rem;
+  padding: 2rem;
   gap: 3rem;
   background-color: #191919;
   border-radius: 10px;
 }
 
-#aboutUsContent-img{
+#aboutUsContent-img {
   display: flex;
-  
 }
 
 #img-cassete {
   margin: -5rem 0 0;
-  
 }
 
 #aboutUsContent-right {
@@ -106,7 +103,7 @@ body {
   justify-content: center;
   margin: 5rem 0;
 
-  img{
+  img {
     width: 250px;
   }
 }

@@ -1,6 +1,6 @@
 body {
   background-color: #1f1f1f;
-  font-family: 'Nexa Thin';
+  font-family: "Nexa Thin";
 }
 
 /* CONTENT -------------------------------------------------------------- */
@@ -10,7 +10,7 @@ body {
 }
 
 #songCollectionTitle {
-  font-family: 'Nexa Heavy';
+  font-family: "Nexa Heavy";
   font-size: 30px;
 }
 
@@ -24,7 +24,7 @@ body {
   width: fit-content;
   gap: 0.5rem;
   h3 {
-    font-family: 'Nexa Regular';
+    font-family: "Nexa Regular";
     align-self: center;
   }
 }
@@ -54,7 +54,7 @@ body {
 }
 
 .heavy {
-  font-family: 'Nexa Heavy';
+  font-family: "Nexa Heavy";
 }
 
 .black-container {
@@ -94,7 +94,7 @@ body {
 }
 
 .song-title {
-  font-family: 'Nexa Heavy';
+  font-family: "Nexa Heavy";
   font-size: 18px;
 }
 
@@ -111,7 +111,7 @@ body {
 
 .white-bold {
   color: white;
-  font-family: 'Nexa Regular';
+  font-family: "Nexa Regular";
   font-size: 28px;
 }
 
@@ -124,34 +124,33 @@ body {
   position: sticky;
   bottom: 0;
   overflow: hidden;
-
 }
 
-#playbar{
+#playbar {
   display: flex;
   padding: 1rem 2rem;
   gap: 1rem;
   align-items: center;
   p {
-   color: white;
+    color: white;
   }
 }
 
-.playbar-content{
+.playbar-content {
   display: flex;
   align-items: center;
   gap: 1rem;
   padding: 0 0.5rem;
 }
 
-#audiobar{
+#audiobar {
   display: flex;
   background-color: rgb(138, 138, 138);
   width: 100%;
   height: 3px;
 }
 
-#audioPercentage{
+#audioPercentage {
   background-color: white;
   height: 100%;
   width: 0;
@@ -159,7 +158,7 @@ body {
 }
 
 #play-title {
-  font-family: 'Nexa Heavy';
+  font-family: "Nexa Heavy";
 }
 
 #image-mini {
@@ -178,7 +177,7 @@ body {
   filter: brightness(70%);
 }
 
-.image-mini3{
+.image-mini3 {
   width: 20px;
   height: 20px;
 }
