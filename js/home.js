@@ -1,4 +1,5 @@
-import { songData } from "../js/global/song-data.js";
+import { songData } from "/js/global/song-data.js";
+import { playSong } from "/js/global/play-song.js";
 
 displaySong();
 displaySongRecommendation();
@@ -17,20 +18,12 @@ function displaySong() {
         <h5>${song.artist}</h5>
         </div>`;
 
-    // const songBoxClone = songBox.cloneNode(true);
-
     contentGroup.appendChild(songBox);
-    // contentGroupRecommendation.appendChild(songBoxClone);
-
+    
     songBox.addEventListener("click", function () {
-      // localStorage.setItem("selectedSong", JSON.stringify(song));
-      // window.location.href="song-detail.html";
+      playSong(song);
     });
 
-    // songBoxClone.addEventListener("click", function(){
-    //     localStorage.setItem("selectedSong", JSON.stringify(song));
-    //     window.location.href="song-detail.html";
-    // });
   });
 }
 
@@ -39,21 +32,20 @@ function displaySongRecommendation() {
     "content-group-recommendation"
   );
 
-  songData.forEach((recSong) => {
+  songData.forEach((song) => {
     const songBox = document.createElement("div");
     songBox.classList.add("each-content");
 
-    songBox.innerHTML = `<img src="${recSong.image}" alt="" />
+    songBox.innerHTML = `<img src="${song.image}" alt="" />
         <div class="content-teks">
-        <h4>${recSong.title}</h4>
-        <h5>${recSong.artist}</h5>
+        <h4>${song.title}</h4>
+        <h5>${song.artist}</h5>
         </div>`;
 
     contentGroupRecommendation.appendChild(songBox);
 
     songBox.addEventListener("click", function () {
-      localStorage.setItem("selectedSong", JSON.stringify(recSong));
-      window.location.href = "song-detail.html";
+      playSong(song);
     });
   });
 }
@@ -71,11 +63,3 @@ document
     const container = document.getElementById("content-group-recommendation");
     container.scrollLeft += 220;
   });
-
-// contentGroup.innerHTML = `<div class="each-content">
-//               <img src="img/gambar1-bestseller.png" alt="" />
-//               <div class="content-teks">
-//                 <h4>Talking To The Moon</h4>
-//                 <h5>Bruno Mars</h5>
-//               </div>
-//             </div>`

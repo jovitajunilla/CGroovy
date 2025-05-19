@@ -4,10 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>C'Groovy - Home</title>
+    <link rel="icon" href="../assets/img/icon.ico" />
   </head>
   <link rel="stylesheet" href="../assets/css/home.css" />
   <link rel="stylesheet" href="../assets/css/global/header-footer.css" />
-  <link rel="icon" href="../assets/img/icon.ico" />
   <body>
     <header>
       <div class="navbar">
@@ -38,7 +38,10 @@
       <div class="top-content">
         <!-- UNIQUE VALUE POINT -->
         <div class="unique-value-point">
-          <img src="../assets/img/unique-value-point.png" alt="unique-value-point.img" />
+          <img
+            src="../assets/img/unique-value-point.png"
+            alt="unique-value-point.img"
+          />
           <div class="unique-value-point-text">
             <h4>Recognize the Song, Not the Title?</h4>
             <h4>Humming your voice to find the song</h4>
@@ -52,13 +55,7 @@
           <h1>Best Seller</h1>
 
           <div class="content-group" id="content-group">
-            <!-- <div class="each-content">
-              <img src="../assets/img/gambar1-bestseller.png" alt="" />
-              <div class="content-teks">
-                <h4>Talking To The Moon</h4>
-                <h5>Bruno Mars</h5>
-              </div>
-            </div> -->
+            <!-- js each content -->
           </div>
         </div>
         <!-- BEST SELLER CONTENT -->
@@ -79,13 +76,7 @@
             class="content-group-recommendation"
             id="content-group-recommendation"
           >
-            <!-- <div class="each-content">
-              <img src="../assets/img/gambar1-bestseller.png" alt="" />
-              <div class="content-teks">
-                <h4>Talking To The Moon</h4>
-                <h5>Bruno Mars</h5>
-              </div>
-            </div> -->
+            <!-- js each content -->
           </div>
           <img
             class="button-slider"
@@ -97,15 +88,20 @@
       </div>
     </div>
 
+     <div id="play">
+      <!-- play bar di js -->
+    </div>
+
     <footer>
       <div id="footer-all">
         <h1>@2025 C'Groovy</h1>
       </div>
     </footer>
 
-    <script src="../js/global/jquery-3.6.0.min.../js"></script>
+    <script src="../js/global/jquery-3.6.0.min.js"></script>
     <script src="../js/home.js" type="module"></script>
     <script src="../js/global/song-data.js" type="module"></script>
+    <script src="../js/global/play-song.js" type="module"></script>
     <script src="../js/global/header.js"></script>
   </body>
 </html>
