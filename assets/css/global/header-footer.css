@@ -154,4 +154,13 @@ footer {
 /* END FOOTER -------------------------------------------------- */
 
 @media screen and (max-width: 800px) {
+  
+}
+
+
+/* Kami membuat jika dibawah 500px resolusinya, maka object username hilang */
+@media screen and (max-width: 500px) {
+  #user {
+  display: none;
+  }
 }
