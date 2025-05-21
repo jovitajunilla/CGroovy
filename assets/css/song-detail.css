@@ -33,6 +33,7 @@ body {
   gap: 5rem;
   margin: 7rem;
   width: 100%;
+  box-sizing: border-box;
 }
 
 #box-container {
@@ -44,21 +45,20 @@ body {
   flex-direction: column;
   gap: 0.5rem;
   width: 100%;
-}
+  .song-title{
+    font-size: clamp(3rem, 5vw, 4rem);
+  }
+  .song-singer {
+    font-family: "Nexa Thin";
+    color: #c4c4c4;
+    font-size: clamp(2rem, 2.5vw, 3.5rem);
+  }
 
-.song-title {
-  font-size: 65px;
-}
-
-.song-singer {
-  font-family: "Nexa Thin";
-  color: #c4c4c4;
-  font-size: 30px;
-}
-
-.song-desc {
-  color: #c4c4c4;
-  font-family: "Nexa Thin";
+  .song-desc{
+    font-family: "Nexa Thin";
+    color: #c4c4c4;
+    font-size: clamp(1rem, 1.2vw, 1.2rem);
+  }
 }
 
 .img-song {
@@ -80,6 +80,7 @@ body {
   gap: 0.5rem;
   h3 {
     font-family: "Nexa Regular";
+    font-size: clamp(1rem, 1vw, 2rem);
     align-self: center;
   }
 }
@@ -103,6 +104,7 @@ body {
     width: 30px;
     height: 30px;
   }
+  
 }
 
 #play-timer {
@@ -194,3 +196,78 @@ body {
 }
 
 /* --END CONTENT------------------------------------------- */
+
+@media screen and (max-width: 800px) {
+    #content {
+      z-index: 1;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      margin: clamp(1rem, 3rem, 3rem);
+      width: 100%;
+      gap:2rem;
+      box-sizing: border-box;
+    }
+
+    #lyrics-container {
+      background-color: #2b2b2b;
+      height: 100%;
+      padding: 2rem;
+      gap: 20px;
+      display: flex;
+      flex-direction: column;
+      color: #c4c4c4;
+    }
+
+    .img-song {
+      object-fit: cover;
+      border-radius: 10px;
+      width: 30vh;
+      height: 30vh;
+      object-fit: cover;
+    }
+
+    .song-title-detail {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      width: 100%;
+      .song-title{
+        /* font-size: clamp(2.5rem, 5vw, 4rem); */
+    }
+    .song-singer {
+      font-family: "Nexa Thin";
+      color: #c4c4c4;
+      /* font-size: clamp(1rem, 3.5vw, 3.5rem); */
+    }
+
+    .song-desc{
+      font-family: "Nexa Thin";
+      color: #c4c4c4;
+      /* font-size: clamp(0.5rem, 2vw, 1.2rem); */
+    }
+    
+    #play-title {
+      font-family: "Nexa Heavy";
+      font-size: clamp(0.5rem, 2vw, 1.2rem);
+    }
+    
+    #buttonPlay {
+    display: flex;
+    font-family: "Nexa Heavy";
+    font-size: clamp(0.5rem, 2vw, 1.2rem);  
+    background-color: #2b2b2b;
+    border-radius: 6px;
+    padding: 0.3rem 1rem;
+    width: fit-content;
+    gap: 0.5rem;
+    h3 {
+    font-family: "Nexa Regular";
+    font-size: clamp(1rem, 1vw, 2rem);
+    align-self: center;
+  }
+}
+
+}
+
+}

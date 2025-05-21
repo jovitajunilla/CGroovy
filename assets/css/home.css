@@ -118,7 +118,7 @@ h5 {
     font-size: 14px;
     font-family: "Nexa Thin";
     -webkit-text-fill-color: #c4c4c4;
-  }
+  } 
 }
 
 /* RECOMMENDATION */
@@ -163,9 +163,9 @@ h5 {
   }
 
   .button-slider:hover {
-    width: 43px;
-    height: 43px;
+    transform: scale(1.07);
   }
+
 }
 
 .bottom-content {
@@ -276,32 +276,49 @@ h5 {
     box-sizing: border-box;
   }
 
+  .recommendation {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+    background-color: #191919;
+    height: auto;
+    padding: 50px 50px;
+
+    h1 {
+      font-family: "Nexa Heavy";
+      font-size: 30px;
+      box-sizing: border-box;
+      margin-left: 5vh;
+    }
+  }
+
   .unique-value-point {
-    padding: 30px 10px;
+    padding: 1rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 30px;
 
-    font-size: 15px;
+    font-size: 4rem;
     background-color: #191919;
     height: 50vh;
     width: auto;
-    min-width: 300px;
 
     box-sizing: border-box;
 
     h4 {
-      font-size: 15px;
+      font-size: clamp(0.5rem, 5vw, 1rem);
       text-align: center;
       font-family: "Nexa Thin";
       -webkit-text-fill-color: white;
-      white-space: nowrap; /* Mencegah teks pindah baris */
+      text-wrap: wrap;
     }
 
-    img {
-      margin-left: 20px;
+    img{
+      width: clamp(0.5rem, 6rem, 6rem);
+      margin-left: 2rem;
     }
 
     button {
