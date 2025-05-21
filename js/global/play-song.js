@@ -59,7 +59,7 @@ export function playSong(song) {
     let nextIndex;
     do {
       nextIndex= Math.floor(Math.random() * songData.length);
-    } while (nextIndex === songData.indexOf(song));
+    } while (JSON.stringify(songData[nextIndex].title) === JSON.stringify(song.title));
 
     const songNextIndex = songData[nextIndex];
     // console.log(`${songNextIndex.title}`);
@@ -125,7 +125,7 @@ function playBackIcon(song) {
       randomIndex = Math.floor(Math.random() * songData.length);
       // I spent 10 minutes trying to figure out why I couldn't get the index,
       // only to realize I had forgotten to add parentheses after Math.random -jopita 19/05/2025 08.03
-    } while (randomIndex === songData.indexOf(song));
+    }while (JSON.stringify(songData[randomIndex].title) === JSON.stringify(song.title));
 
     const randomSong = songData[randomIndex];
 
@@ -148,7 +148,7 @@ function playNextIcon(song) {
       randomIndex = Math.floor(Math.random() * songData.length);
       // I spent 10 minutes trying to figure out why I couldn't get the index,
       // only to realize I had forgotten to add parentheses after Math.random -jopita 19/05/2025 08.03
-    } while (randomIndex === songData.indexOf(song));
+    } while (JSON.stringify(songData[randomIndex].title) === JSON.stringify(song.title));
 
     const randomSong = songData[randomIndex];
 

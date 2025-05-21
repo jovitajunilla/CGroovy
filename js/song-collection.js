@@ -60,7 +60,10 @@ function displaySong() {
   }
 }
 
-const randIndex = Math.floor(Math.random(songData.length));
+let  randIndex;
+do{
+  randIndex = Math.floor(Math.random(songData.length));
+}while (JSON.stringify(songData[nextIndex].title) === JSON.stringify(song.title));
 const song =song[randIndex];
 buttonPlay.addEventListener("click", function(){
   playSong(song);
