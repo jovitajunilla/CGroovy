@@ -50,16 +50,34 @@ function displaySongRecommendation() {
   });
 }
 
-document
-  .getElementById("button-slider-left")
-  .addEventListener("click", function () {
-    const container = document.getElementById("content-group-recommendation");
-    container.scrollLeft -= 220;
-  });
+document.getElementById("button-slider-left").addEventListener("click", function () {
+  const container = document.getElementById("content-group-recommendation");
+  const card = container.querySelector(".each-content");
+  const scrollAmount = card.offsetWidth + 40; // 40 adalah gap antar card
+  container.scrollLeft -= scrollAmount;
+});
 
-document
-  .getElementById("button-slider-right")
-  .addEventListener("click", function () {
-    const container = document.getElementById("content-group-recommendation");
-    container.scrollLeft += 220;
-  });
+document.getElementById("button-slider-right").addEventListener("click", function () {
+  const container = document.getElementById("content-group-recommendation");
+  const card = container.querySelector(".each-content");
+  const scrollAmount = card.offsetWidth + 40; // 40 adalah gap antar card
+  container.scrollLeft += scrollAmount;
+});
+
+// document
+//   .getElementById("button-slider-left")
+//   .addEventListener("click", function () {
+//     const container = document.getElementById("content-group-recommendation");
+//     container.scrollLeft -= 220;
+//   });
+
+// document
+//   .getElementById("button-slider-right")
+//   .addEventListener("click", function () {
+//     const container = document.getElementById("content-group-recommendation");
+//     container.scrollLeft += 220;
+//   });
+
+  // -- JAVASCRIPT FOR SCROLLING --
+
+  
