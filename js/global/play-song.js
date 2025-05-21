@@ -72,7 +72,7 @@ export function playSong(song) {
 
     setTimeout(function () {
       playSong(nextSong);
-    }, 1000);
+    }, 500);
   });
 
   //deklarasi audiobar

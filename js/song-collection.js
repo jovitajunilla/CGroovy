@@ -58,13 +58,16 @@ function displaySong() {
 
     songBox.appendChild(categoryDiv);
   }
+  
 }
 
-let  randIndex;
-do{
+let randIndex;
+do {
   randIndex = Math.floor(Math.random(songData.length));
-}while (JSON.stringify(songData[nextIndex].title) === JSON.stringify(song.title));
-const song =song[randIndex];
-buttonPlay.addEventListener("click", function(){
-  playSong(song);
+} while (
+  JSON.stringify(songData[randIndex].title) === localStorage.getItem("selectedSong"));
+
+const randomSong = songData[randIndex];
+buttonPlay.addEventListener("click", function () {
+  playSong(randomSong);
 });
