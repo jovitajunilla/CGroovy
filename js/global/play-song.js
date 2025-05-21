@@ -56,8 +56,11 @@ export function playSong(song) {
   songAudio.addEventListener("ended", function () {
     playIcon.src = "../assets/img/play-icon-2.png";
 
-    const index = songData.indexOf(song);
-    const nextIndex = Math.floor(Math.random() * songData.length);
+    let nextIndex;
+    do {
+      nextIndex= Math.floor(Math.random() * songData.length);
+    } while (nextIndex === songData.indexOf(song));
+
     const songNextIndex = songData[nextIndex];
     // console.log(`${songNextIndex.title}`);
 
