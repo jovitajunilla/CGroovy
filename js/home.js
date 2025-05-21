@@ -50,19 +50,45 @@ function displaySongRecommendation() {
   });
 }
 
-document.getElementById("button-slider-left").addEventListener("click", function () {
-  const container = document.getElementById("content-group-recommendation");
-  const card = container.querySelector(".each-content");
-  const scrollAmount = card.offsetWidth + 40; // 40 adalah gap antar card
-  container.scrollLeft -= scrollAmount;
+// JQUERY ANIMATION
+
+$("#button-slider-left").on("click", function () {
+  const $container = $("#content-group-recommendation");
+  const $card = $container.find(".each-content").first();
+  const cardWidth = $card.width();
+  const scrollAmount = cardWidth + 40;
+
+  $container.animate({ scrollLeft: "-=" + scrollAmount }, 300);
 });
 
-document.getElementById("button-slider-right").addEventListener("click", function () {
-  const container = document.getElementById("content-group-recommendation");
-  const card = container.querySelector(".each-content");
-  const scrollAmount = card.offsetWidth + 40; // 40 adalah gap antar card
-  container.scrollLeft += scrollAmount;
+$("#button-slider-right").on("click", function () {
+  const $container = $("#content-group-recommendation");
+  const $card = $container.find(".each-content").first();
+  const cardWidth = $card.width();
+  const scrollAmount = cardWidth + 40;
+
+  $container.animate({ scrollLeft: "+=" + scrollAmount }, 300);
 });
+
+
+// JavaScript native
+
+// document.getElementById("button-slider-left").addEventListener("click", function () {
+//   const container = document.getElementById("content-group-recommendation");
+//   const card = container.querySelector(".each-content");
+//   const scrollAmount = card.offsetWidth + 40; // 40 adalah gap antar card
+//   container.scrollLeft -= scrollAmount;
+// });
+
+// document.getElementById("button-slider-right").addEventListener("click", function () {
+//   const container = document.getElementById("content-group-recommendation");
+//   const card = container.querySelector(".each-content");
+//   const scrollAmount = card.offsetWidth + 40; // 40 adalah gap antar card
+//   container.scrollLeft += scrollAmount;
+// });
+
+
+// -----------------------------------------------------------------
 
 // document
 //   .getElementById("button-slider-left")
