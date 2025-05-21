@@ -1,5 +1,4 @@
 import { songData } from "/js/global/song-data.js";
-import { updateSong } from "/js/song-detail.js";
 
 export function playSong(song) {
   // console.log(song);
@@ -110,7 +109,6 @@ export function playSong(song) {
     playNextIcon(song);
   });
 
-  updateSong();
 }
 
 function playBackIcon(song) {

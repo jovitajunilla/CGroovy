@@ -2,30 +2,32 @@ import { playSong } from "/js/global/play-song.js";
 
 window.addEventListener("load", function () {
   updateSong();
+
+  setInterval(updateSong, 1000);
 });
 
-export function updateSong() {
-  const songData = localStorage.getItem("selectedSong");
+function updateSong() {
+  if (window.location.pathname === "/pages/song-detail.html") {
+    
+      const songData = localStorage.getItem("selectedSong");
+      const song = JSON.parse(songData);
 
-  if (songData) {
-    const song = JSON.parse(songData);
+      const detailBox = document.getElementById("content");
 
-    const detailBox = document.getElementById("content");
+      const audio = new Audio(song.audio);
 
-    const audio = new Audio(song.audio);
+      const backgroundBox = document.getElementById("background-blur");
+      backgroundBox.style.backgroundImage = `url("${song.image}")`;
 
-    const backgroundBox = document.getElementById("background-blur");
-    backgroundBox.style.backgroundImage = `url("${song.image}")`;
+      audio.onloadedmetadata = function () {
+        const duration = audio.duration;
+        const minutes = Math.floor(duration / 60);
+        const seconds = Math.floor(duration % 60);
+        const formattedMinutes = minutes < 10 ? "0" + minutes : minutes;
+        const formattedSeconds = seconds < 10 ? "0" + seconds : seconds;
+        const durationFormatted = `${formattedMinutes}:${formattedSeconds}`;
 
-    audio.onloadedmetadata = function () {
-      const duration = audio.duration;
-      const minutes = Math.floor(duration / 60);
-      const seconds = Math.floor(duration % 60);
-      const formattedMinutes = minutes < 10 ? "0" + minutes : minutes;
-      const formattedSeconds = seconds < 10 ? "0" + seconds : seconds;
-      const durationFormatted = `${formattedMinutes}:${formattedSeconds}`;
-
-      detailBox.innerHTML = `
+        detailBox.innerHTML = `
     <img
     src="${song.image}"
     alt="song-list1"
@@ -52,15 +54,16 @@ export function updateSong() {
             </div>
             </div>`;
 
-      const lyrics = document.getElementById("lyrics");
+        const lyrics = document.getElementById("lyrics");
 
-      lyrics.innerHTML = `${song.lyrics}`;
+        lyrics.innerHTML = `${song.lyrics}`;
 
-      const buttonPlay = document.querySelector("#buttonPlay");
+        const buttonPlay = document.querySelector("#buttonPlay");
 
-      buttonPlay.addEventListener("click", function () {
-        playSong(song);
-      });
-    };
+        buttonPlay.addEventListener("click", function () {
+          playSong(song);
+        });
+      };
+    
   }
 }
