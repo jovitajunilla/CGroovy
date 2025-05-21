@@ -8,103 +8,93 @@
     <link rel="icon" href="../assets/img/icon.ico" />
   </head>
   <body>
-    <div id="contentBox">
-      <div id="titleDiv">
-        <h2 id="groovy">C'Groovy</h2>
-        <h2>REGISTER</h2>
-      </div>
+    <div class="content-position">
 
-      <div id="formDiv">
-        <form id="forms" action="./pages/home.html" method="POST">
-          <div class="formsSection">
-            Full Name
-            <br />
-            <input
+      <div id="contentBox">
+        <div id="titleDiv">
+          <h2 id="groovy">C'Groovy</h2>
+          <h2>REGISTER</h2>
+        </div>
+        
+        <div id="formDiv">
+          <form id="forms" action="./pages/home.html" method="POST">
+            <div class="formsSection">
+              <h3>Full Name</h3>
+              <input
               type="text"
               name="name"
               class="texts"
               id="nameFld"
               onblur="nameValidation()"
-            />
-          </div>
-
-          <div class="formsSection">
-            Age
-            <br />
-            <input
+              />
+            </div>
+            
+            <div class="formsSection">
+              <h3>Age</h3>
+              <input
               type="number"
               name="age"
               class="texts"
               id="ageFld"
               onblur="ageValidation()"
-            />
-          </div>
-
-          <div class="formsSection">
-            Gender
-            <br />
-            <input
-              type="radio"
-              name="gender"
-              class="genderTogg"
-              id="maleBtn"
-            />Male
-            <input
-              type="radio"
-              name="gender"
-              class="genderTogg"
-              id="femaleBtn"
-            />Female
-          </div>
-
-          <div class="formsSection">
-            Email
-            <br />
-            <input
+              />
+            </div>
+            
+            <div class="formsSection">
+              <h3>Gender</h3>
+              <div class="gender-radio">
+                <input type="radio" name="gender" class="genderTogg" id="maleBtn"/>Male
+                <input type="radio" name="gender" class="genderTogg" id="femaleBtn"/>Female
+              </div>  
+            </div>
+            
+            <div class="formsSection">
+              <h3>Email</h3>
+              <input
               type="text"
               name="email"
               class="texts"
               id="emailFld"
               onblur="emailValidation()"
-            />
-          </div>
-
-          <div class="formsSection">
-            Password
-            <br />
-            <input
+              />
+            </div>
+            
+            <div class="formsSection">
+              <h3>Password</h3>
+              <input
               type="password"
               name="password"
               class="texts"
               id="passFld"
               onblur="passwordValidation()"
-            />
-          </div>
-
-          <div class="formsSection">
-            Re-Password
-            <br />
-            <input
+              />
+            </div>
+            
+            <div class="formsSection">
+              <h3>Re-Password</h3>
+              <input
               type="password"
               name="repassword"
               class="texts"
               id="rePassFld"
               onblur="rePassValidation()"
-            />
-          </div>
-
-          <div class="formsSection">
-            <p id="errorMessage"></p>
-          </div>
-
-          <div class="formsSection" id="buttonCont">
-            <button type="button" id="regButton" onclick="checkValid()">
-              Register
-            </button>
-          </div>
-        </form>
+              />
+            </div>
+            
+            <div class="formsSection">
+              <p id="errorMessage"></p>
+            </div>
+            
+            <div id="buttonCont">
+              <button type="button" id="regButton" onclick="checkValid()">
+                REGISTER
+              </button>
+            </div>
+          </form>
+        </div>
       </div>
     </div>
-  </body>
-  <script src="./js/register.js"></script>
-</html>
+    </body>
+    <script src="./js/register.js"></script>
+    </html>
+    

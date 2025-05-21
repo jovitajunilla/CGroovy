@@ -9,44 +9,58 @@ body {
   align-items: center;
 }
 
+.content-position{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-self: center;
+}
+
 #contentBox {
-  display: block;
-  margin-top: 55px;
+  padding: 30px 40px;
+  display: flex;
+  flex-direction: column;
   width: 400px;
-  height: 550px;
+  height: auto;
+  gap: 20px;
   background-color: white;
   justify-content: center;
+  border-radius: 7px;
+  box-sizing: border-box;
 }
 
 #titleDiv {
-  display: block;
+  display: flex;
+  flex-direction: column;
   text-align: center;
-  height: 80px;
-  align-content: center;
+  
+  #groovy {
+    font-size: 25px;
+    -webkit-text-fill-color: #b838a7;
+  }
+
+  h2{
+    font-size: 22px;
+    font-family: 'Nexa Heavy';
+    -webkit-text-fill-color: #4f4f4f;
+  }
+
 }
 
-#groovy {
-  -webkit-text-fill-color: #b838a7;
-}
-h2 {
+h2, h3{
   margin: 0px;
 }
 
 #formDiv {
-  font-size: 12pt;
-  display: block;
-  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  font-size: 12px;  
 }
 
 .texts {
-  width: 350px;
   height: 20px;
   border: #bebebe solid 1px;
-  border-radius: 8px;
-}
-
-#femaleBtn {
-  margin-left: 20px;
+  border-radius: 5px;
 }
 
 #ageFld {
@@ -61,18 +75,34 @@ h2 {
 #regButton {
   width: 155px;
   height: 40px;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 18pt;
+  font-family: 'Nexa Heavy';
+  font-size: 16px;
   background-color: #b838a7;
+  border-radius: 5px;
   -webkit-text-fill-color: white;
   border: 0px;
 }
 
+#forms{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
 .formsSection {
-  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
 }
 
 #errorMessage {
   font-size: 10pt;
   -webkit-text-fill-color: red;
+}
+
+@media screen and (max-width: 800px) {
+
+  body{
+    background: linear-gradient(to top, #481842, #C35C93);
+  }
+
 }
