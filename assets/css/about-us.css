@@ -109,3 +109,20 @@ body {
 }
 
 /* --END CONTENT------------------------------------------- */
+/* RESPONSIVE */
+@media screen and (max-width: 800px) {
+  
+  #aboutUsContent{
+    flex-direction: column;
+  }
+  #img-cassete{
+    width: 100%;
+  }
+  #journeyProgression{
+    align-items: center;
+    justify-content: right;
+  }
+  #teamMembersTitle {
+    width: 50%;
+  }
+}

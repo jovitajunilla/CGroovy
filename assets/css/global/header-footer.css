@@ -167,5 +167,9 @@ footer {
 }
 
 @media screen and (max-width: 350px) {
-
+  .right-menu{
+      h1{
+        display: none;
+      }
+    }
 }
