@@ -59,3 +59,9 @@ function displaySong() {
     songBox.appendChild(categoryDiv);
   }
 }
+
+const randIndex = Math.floor(Math.random(songData.length));
+const song =song[randIndex];
+buttonPlay.addEventListener("click", function(){
+  playSong(song);
+});

@@ -30,7 +30,7 @@ body {
 }
 
 #buttonPlay:hover {
-  filter: brightness(120%);
+  filter: brightness(60%);
 }
 
 #image-play {
@@ -70,6 +70,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   gap: 4rem;
+  box-sizing: border-box;
 }
 
 .song {
@@ -127,6 +128,7 @@ body {
 }
 
 #playbar {
+   z-index: 1000;
   display: flex;
   padding: 1rem 2rem;
   gap: 1rem;
@@ -181,6 +183,7 @@ body {
   width: 20px;
   height: 20px;
 }
+
 
 /* --END CONTENT------------------------------------------- */
 

@@ -1,6 +1,7 @@
 body {
   font-family: "Nexa Regular";
   color: white;
+  background-color: #2b2b2b;
 }
 
 /* CONTENT -------------------------------------------------------------- */
@@ -84,7 +85,7 @@ body {
 }
 
 #buttonPlay:hover {
-  filter: brightness(120%);
+  filter: brightness(60%);
 }
 
 #image-play {
@@ -122,6 +123,74 @@ body {
   display: flex;
   flex-direction: column;
   color: #c4c4c4;
+}
+
+#play {
+  display: none;
+  flex-direction: column;
+  width: fit-content;
+  background: linear-gradient(to right, #9b42a2, #a04977);
+  border-radius: 0 20px 20px 0;
+  position: sticky;
+  bottom: 0;
+  overflow: hidden;
+}
+
+#playbar {
+   z-index: 1000;
+  display: flex;
+  padding: 1rem 2rem;
+  gap: 1rem;
+  align-items: center;
+  p {
+    color: white;
+  }
+}
+
+.playbar-content {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0 0.5rem;
+}
+
+#audiobar {
+  display: flex;
+  background-color: rgb(138, 138, 138);
+  width: 100%;
+  height: 3px;
+}
+
+#audioPercentage {
+  background-color: white;
+  height: 100%;
+  width: 0;
+  transition: width 0.3s ease-out;
+}
+
+#play-title {
+  font-family: "Nexa Heavy";
+}
+
+#image-mini {
+  width: 60px;
+  height: 60px;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+.image-mini2 {
+  width: 25px;
+  height: 25px;
+}
+
+.image-mini:hover {
+  filter: brightness(70%);
+}
+
+.image-mini3 {
+  width: 20px;
+  height: 20px;
 }
 
 /* --END CONTENT------------------------------------------- */

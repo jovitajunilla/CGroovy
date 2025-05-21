@@ -1,4 +1,5 @@
 import { songData } from "/js/global/song-data.js";
+import { updateSong } from "/js/song-detail.js";
 
 export function playSong(song) {
   // console.log(song);
@@ -13,12 +14,12 @@ export function playSong(song) {
             <p>${song.artist}</p>
           </div>
           <div class="playbar-content">
-            <img src="../assets/img/play-back-icon.png" alt="" class="image-mini3 image-mini" id="back-icon"/>
-            <img src="../assets/img/play-icon-2.png" alt="" class="image-mini2 image-mini" id="play-icon"/>
-            <img src="../assets/img/play-next-icon.png" alt="" class="image-mini3 image-mini" id="next-icon"/>
+            <img src="../assets/img/play-back-icon.png" alt="" class="image-mini3 image-mini" id="back-icon" title="Previous Song"/>
+            <img src="../assets/img/play-icon-2.png" alt="" class="image-mini2 image-mini" id="play-icon" title = "Click to Play/Pause"/>
+            <img src="../assets/img/play-next-icon.png" alt="" class="image-mini3 image-mini" id="next-icon" title ="Next Song"/>
           </div>
           <a href="song-detail.html">
-            <img src="../assets/img/maximize.png" alt="" class="image-mini2 image-mini" />
+            <img src="../assets/img/maximize.png" alt="" class="image-mini2 image-mini" title = "Maximize"/>
           </a>
           <audio src="${song.audio}" id="song-audio" preload="auto"></audio>
         </div>
@@ -56,9 +57,9 @@ export function playSong(song) {
     playIcon.src = "../assets/img/play-icon-2.png";
 
     const index = songData.indexOf(song);
-    const nextIndex = (index + 1) % songData.length;
+    const nextIndex = Math.floor(Math.random() * songData.length);
     const songNextIndex = songData[nextIndex];
-    console.log(`${songNextIndex.title}`);
+    // console.log(`${songNextIndex.title}`);
 
     localStorage.setItem("previousSong", JSON.stringify(song));
     localStorage.setItem("selectedSong", JSON.stringify(songNextIndex));
@@ -105,6 +106,8 @@ export function playSong(song) {
   nextIcon.on("click", function () {
     playNextIcon(song);
   });
+
+  updateSong();
 }
 
 function playBackIcon(song) {

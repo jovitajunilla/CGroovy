@@ -1,5 +1,10 @@
-// window.onload = function () {
+import { playSong } from "/js/global/play-song.js";
+
 window.addEventListener("load", function () {
+  updateSong();
+});
+
+export function updateSong() {
   const songData = localStorage.getItem("selectedSong");
 
   if (songData) {
@@ -46,10 +51,16 @@ window.addEventListener("load", function () {
             </div>
             </div>
             </div>`;
+
+      const lyrics = document.getElementById("lyrics");
+
+      lyrics.innerHTML = `${song.lyrics}`;
+
+      const buttonPlay = document.querySelector("#buttonPlay");
+
+      buttonPlay.addEventListener("click", function () {
+        playSong(song);
+      });
     };
-
-    const lyrics = document.getElementById("lyrics");
-
-    lyrics.innerHTML = `${song.lyrics}`;
   }
-});
+}
