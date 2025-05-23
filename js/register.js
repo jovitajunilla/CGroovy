@@ -17,6 +17,24 @@ function checkValid() {
     let nameInput = document.getElementById("nameFld").value;
     localStorage.setItem("user", nameInput);
     window.location.href = "../pages/home.html";
+  } 
+  else if(!nameValid){
+    nameValidation();
+  }
+  else if(!ageValid){
+    ageValidation()
+  }
+  else if (!emailValid){
+    emailValidation()
+  }
+  else if (!passwordValid){
+    passwordValidation();
+  }
+  else if (!rePassValid){
+    rePassValidation()
+  }
+  else if (!genderValid){
+    genderValidation();
   }
 }
 
@@ -27,7 +45,8 @@ function nameValidation() {
       "*Name must be more 8 character or more";
     document.getElementById("nameFld").style.border = "1px solid red";
     return false;
-  } else {
+  } 
+  else {
     document.getElementById("errorMessage").innerHTML = "";
     document.getElementById("nameFld").style.border = "1px solid #BEBEBE";
     return true;
@@ -83,7 +102,11 @@ function rePassValidation() {
     document.getElementById("errorMessage").innerHTML = "*password must match";
     document.getElementById("rePassFld").style.border = "1px solid red";
     return false;
-  } else {
+  } else if(rePass.length==0){
+    document.getElementById("errorMessage").innerHTML = "*Re-password must be filled";
+    document.getElementById("rePassFld").style.border = "1px solid red";
+    return false;
+  }else {
     document.getElementById("errorMessage").innerHTML = "";
     document.getElementById("rePassFld").style.border = "1px solid #BEBEBE";
     return true;
