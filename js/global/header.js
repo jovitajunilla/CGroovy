@@ -1,4 +1,10 @@
 window.addEventListener("load", function () {
+  loadDropdown();
+
+   setInterval(loadDropdown, 1000);
+});
+
+function loadDropdown(){
   // console.log(localStorage.getItem("user"));
   let username = localStorage.getItem("user");
   let usernameSplit = username.split(" ");
@@ -19,4 +25,4 @@ window.addEventListener("load", function () {
   const menuRect = menuElement.getBoundingClientRect();
   const menuRight = menuRect.right;
   dropdownMenu.style.right = `${window.innerWidth - menuRight}px`;
-});
+}
