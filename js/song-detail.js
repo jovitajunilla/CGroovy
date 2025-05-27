@@ -1,4 +1,4 @@
-import { playSong } from "/js/global/play-song.js";
+import { playSong } from "./play-song.js";
 
 window.addEventListener("load", function () {
   updateSong();

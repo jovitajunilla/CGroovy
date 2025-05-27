@@ -73,6 +73,10 @@ h5 {
     -webkit-text-fill-color: #ffffff;
     background-color: #b838a7;
   }
+
+   button:hover{
+      background-color: #832777;
+    }
 }
 
 /* BEST SELLER */
@@ -331,6 +335,7 @@ h5 {
       -webkit-text-fill-color: #ffffff;
       background-color: #b838a7;
     }
+
   }
   
   .recommendation {

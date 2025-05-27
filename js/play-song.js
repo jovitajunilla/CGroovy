@@ -1,4 +1,4 @@
-import { songData } from "/js/global/song-data.js";
+import { songData } from "./song-data.js";
 
 export function playSong(song) {
   // console.log(song);

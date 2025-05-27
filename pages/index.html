@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>C'Groovy - Register</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="icon" href="./assets/img/icon.ico" />
+  </head>
+  <body>
+    <div class="content-position">
+
+      <div id="contentBox">
+        <div id="titleDiv">
+          <h2 id="groovy">C'Groovy</h2>
+          <h2>REGISTER</h2>
+        </div>
+        
+        <div id="formDiv">
+          <form id="forms" action="./home.html" method="POST">
+            <div class="formsSection">
+              <h3>Full Name</h3>
+              <input
+              type="text"
+              name="name"
+              class="texts"
+              id="nameFld"
+              onblur="nameValidation()"
+              />
+            </div>
+            
+            <div class="formsSection">
+              <h3>Age</h3>
+              <input
+              type="number"
+              name="age"
+              class="texts"
+              id="ageFld"
+              onblur="ageValidation()"
+              />
+            </div>
+            
+            <div class="formsSection">
+              <h3>Gender</h3>
+              <div class="gender-radio">
+                <input type="radio" name="gender" class="genderTogg" id="maleBtn"/>Male
+                <input type="radio" name="gender" class="genderTogg" id="femaleBtn"/>Female
+              </div>  
+            </div>
+            
+            <div class="formsSection">
+              <h3>Email</h3>
+              <input
+              type="text"
+              name="email"
+              class="texts"
+              id="emailFld"
+              onblur="emailValidation()"
+              />
+            </div>
+            
+            <div class="formsSection">
+              <h3>Password</h3>
+              <input
+              type="password"
+              name="password"
+              class="texts"
+              id="passFld"
+              onblur="passwordValidation()"
+              />
+            </div>
+            
+            <div class="formsSection">
+              <h3>Re-Password</h3>
+              <input
+              type="password"
+              name="repassword"
+              class="texts"
+              id="rePassFld"
+              onblur="rePassValidation()"
+              />
+            </div>
+            
+            <div class="formsSection">
+              <p id="errorMessage"></p>
+            </div>
+            
+            <div id="buttonCont">
+              <button type="button" id="regButton" onclick="checkValid()">
+                REGISTER
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    </body>
+    <script src="../js/register.js"></script>
+    </html>
+    

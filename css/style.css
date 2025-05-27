@@ -2,7 +2,7 @@ body {
   box-sizing: border-box;
   font-family: 'Nexa Regular';
   -webkit-text-fill-color: black;
-  background-image: url("../img/Register Wallpaper.jpg");
+  background-image: url("../assets/img/Register Wallpaper.jpg");
   display: flex;
   justify-content: center;
   align-items: center;

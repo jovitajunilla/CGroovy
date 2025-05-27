@@ -1,5 +1,5 @@
-import { songData } from "/js/global/song-data.js";
-import { playSong } from "/js/global/play-song.js";
+import { songData } from "./song-data.js";
+import { playSong } from "./play-song.js";
 
 displaySong();
 displaySongRecommendation();
