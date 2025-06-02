@@ -82,6 +82,10 @@ h2, h3{
   border: 0px;
 }
 
+#regButton:hover{
+  background-color: #78246c;
+}
+
 #forms{
   display: flex;
   flex-direction: column;
